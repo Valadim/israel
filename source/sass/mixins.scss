@@ -1,0 +1,38 @@
+@mixin btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-normal;
+}
+
+@mixin btn-hover {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-hover;
+}
+
+@mixin btn-active {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-active;
+}
