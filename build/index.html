@@ -34,7 +34,7 @@
 
       <h1 class="header__title">Учёба, путешествие и карьера
         для еврейской молодёжи</h1>
-      <button class="header__btn">
+      <button type="button" class="header__btn">
         <span class="visually-hidden">Узнать о программе</span>
         <img src="img/mouse.png" srcset="img/mouse@2x.png" alt="листать вниз" class="header__btn-icon" width="17" height="26">
       </button>
@@ -54,7 +54,7 @@
           8400$.
         </p>
         <div class="about__video-wrapper">
-          <button class="about__video-play-btn">
+          <button type="button" class="about__video-play-btn">
 
             <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
@@ -82,16 +82,105 @@
     <section class="programms">
       <div class="programms__wrapper">
         <h2 class="programms__title">программы</h2>
+
+        <div class="programms__tabs">
+          <div class="programms__tabs-btn-wrapper">
+            <button type="button" class="programms__tabs-btn programms__tabs-btn--comon" onclick="openProgramm(event, 'Сommon')" id="defaultOpen">Общие</button>
+            <button type="button" class="programms__tabs-btn programms__tabs-btn--academ" onclick="openProgramm(event, 'Academ')">Академические</button>
+            <button type="button" class="programms__tabs-btn programms__tabs-btn--pract" onclick="openProgramm(event, 'Pract')">Стажировки</button>
+            <button type="button" class="programms__tabs-btn programms__tabs-btn--volunteer" onclick="openProgramm(event, 'Volunteer')">Волонтёрство</button>
+            <button type="button" class="programms__tabs-btn programms__tabs-btn--religion" onclick="openProgramm(event, 'Religion')">Религиозные</button>
+          </div>
+
+          <div id="Сommon" class="programms__tabs-content">
+            <h3 class="programms__tabs-title">Общие</h3>
+            <p class="programms__tabs-descr">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+              рыбные тексты. Вдали, правилами
+              океана города ipsum ручеек назад всемогущая они до путь гор это? Использовало, раз всеми курсивных толку
+              там домах.</p>
+          </div>
+
+          <div id="Academ" class="programms__tabs-content">
+            <h3 class="programms__tabs-title">Академические</h3>
+            <p class="programms__tabs-descr">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем
+              жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также
+              академический центр, живая лаборатория идей и творческого исследования. </p>
+            <p class="programms__tabs-descr">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
+              биологии, сравнительной
+              религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+
+          <div id="Pract" class="programms__tabs-content">
+            <h3 class="programms__tabs-title">Стажировки</h3>
+            <p class="programms__tabs-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+              temporibus animi maxime alias enim
+              eveniet at qui illum soluta deleniti ducimus, quaerat doloremque, possimus, distinctio iusto quis veniam
+              nam aperiam.</p>
+          </div>
+          <div id="Volunteer" class="programms__tabs-content">
+            <h3 class="programms__tabs-title">Волонтёрство</h3>
+            <p class="programms__tabs-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут
+              рыбные тексты. Текста свой на
+              берегу ipsum от всех оксмокс великий рот, большой снова, буквенных, заглавных пояс приставка ее маленькая.
+              Грустный ручеек lorem послушавшись?</p>
+          </div>
+          <div id="Religion" class="programms__tabs-content">
+            <h3 class="programms__tabs-title">Религиозные</h3>
+            <p class="programms__tabs-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis eum
+              eaque tempore, porro quos iste
+              saepe odit? Nihil quo quos recusandae similique dolore soluta eius doloribus fugit voluptatibus officiis.
+            </p>
+          </div>
+
+        </div>
       </div>
     </section>
     <!-- /.programms -->
 
     <section class="to-go">
 
+      <div class="to-go__wrapper">
+        <h2 class="to-go__title">Хочу поехать!</h2>
+        <p class="to-go__descr">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+        </p>
+
+        <form action="https://echo.htmlacademy.ru" method="post" class="to-go__form">
+          <div class="to-go__fieldset">
+            <p class="to-go__form-item">
+              <label class="visually-hidden" for="to-go__phone-number">Номер
+                телефона:</label>
+              <input class="to-go__input-phone" id="to-go__phone-number" type="tel" name="Номер телефона:" placeholder="телефон">
+            </p>
+            <button type="submit" class="to-go__btn-submit">перезвоните мне</button>
+          </div>
+        </form>
+      </div>
+
     </section>
     <!-- /.to-go -->
 
     <section class="how-to-go">
+      <div class="how-to-go__wrapper">
+        <div class="how-to-go__inner-wrapper">
+          <h2 class="how-to-go__title">Как поехать</h2>
+          <p class="how-to-go__descr">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
+            получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+          <p class="how-to-go__descr how-to-go__descr--bold">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы
+              должны:</p>
+          <ul class="how-to-go__steps-list">
+            <li class="how-to-go__step">Быть в возрасте от 16 до 30 лет</li>
+            <li class="how-to-go__step">Иметь оконченное среднее образование</li>
+            <li class="how-to-go__step">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
+            </li>
+            <li class="how-to-go__step">За последние 2 года быть не больше 3х месяцев
+              подряд непрерывно в Израиле.</li>
+          </ul>
+          <p class="how-to-go__notice">Если вы не подходите по этим правилам, вы всё равно можете принять участие в
+            программе «Маса», оплатив её полную стоимость.</p>
+        </div>
+      </div>
 
     </section>
     <!-- /.how-to-go -->

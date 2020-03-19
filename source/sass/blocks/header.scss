@@ -1,6 +1,6 @@
 .header {
   background-image: url("../../img/promo-bg.jpg");
-  background-position: center -40px;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -72,6 +72,14 @@
   text-align: center;
 }
 
+.header__title {
+  max-width: 345px;
+  margin-top: 458px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 .header__btn {
   position: relative;
   align-self: center;
@@ -114,19 +122,19 @@
   height: 26px;
 }
 
-@media (max-width: 1366px) {
-  .header {
-    background-position: center top;
-  }
+// @media (max-width: 1366px) {
+//   .header {
+//     background-position: center top;
+//   }
 
-  .header__title {
-    max-width: 345px;
-    margin-top: 458px;
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
+//   .header__title {
+//     max-width: 345px;
+//     margin-top: 458px;
+//     margin-bottom: 32px;
+//     font-size: 24px;
+//     line-height: 29px;
+//   }
+// }
 
 @media (max-width: 1200px) {
   .header__wrapper {

@@ -17,14 +17,7 @@
 }
 
 .about__title {
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
-  text-align: center;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: $blue;
+  @include title;
 }
 
 .about__descr {
@@ -98,8 +91,7 @@
   }
 
   .about__title {
-    font-size: 32px;
-    line-height: 39px;
+    @include title-mobile;
   }
 
   .about__descr {

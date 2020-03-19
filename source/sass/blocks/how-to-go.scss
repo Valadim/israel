@@ -1,0 +1,105 @@
+.how-to-go {
+  margin-top: 100px;
+  padding: 50px 0;
+  background-image: url("../../img/how-to-go-stamp-bg.jpg");
+  background-position: right center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.how-to-go__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-image: url("../../img/how-to-go-img.jpg");
+  background-position: left center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.how-to-go__inner-wrapper {
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.how-to-go__title {
+  @include title;
+  text-align-last: left;
+}
+
+.how-to-go__descr {
+  margin-bottom: 30px;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.how-to-go__steps-list {
+  @include list-reset;
+  margin-bottom: 30px;
+}
+
+.how-to-go__step {
+  margin-bottom: 10px;
+}
+
+.how-to-go__notice {
+  position: relative;
+  padding-left: 20px;
+  color: $black;
+  opacity: 0.5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-image: $gradient;
+  }
+}
+
+@media (max-width: 1200px) {
+  .how-to-go__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .how-to-go__title {
+    max-width: 345px;
+    margin-top: 358px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+
+@media (max-width: $mobile) {
+
+  .how-to-go {
+    // background-image: url("../../img/promo-mobile-bg.jpg");
+    // background-position: center top;
+  }
+
+  .how-to-go__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    background: none;
+  }
+
+  .how-to-go__title {
+    @include title;
+    text-align-last: left;
+  }
+
+  -mobile .how-to-go__title {
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

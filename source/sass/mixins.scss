@@ -9,6 +9,8 @@
   color: $white;
   text-shadow: $text-shadow;
   background: $btn-normal;
+  border: none;
+  border-radius: 80px;
 }
 
 @mixin btn-hover {
@@ -22,6 +24,8 @@
   color: $white;
   text-shadow: $text-shadow;
   background: $btn-hover;
+  border: none;
+  border-radius: 80px;
 }
 
 @mixin btn-active {
@@ -35,4 +39,31 @@
   color: $white;
   text-shadow: $text-shadow;
   background: $btn-active;
+  border: none;
+  border-radius: 80px;
+}
+
+@mixin title {
+  margin-bottom: 70px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+
+@mixin title-mobile {
+  @include title;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
