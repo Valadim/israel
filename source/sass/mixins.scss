@@ -11,6 +11,7 @@
   background: $btn-normal;
   border: none;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 @mixin btn-hover {
@@ -26,6 +27,7 @@
   background: $btn-hover;
   border: none;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 @mixin btn-active {
@@ -41,6 +43,7 @@
   background: $btn-active;
   border: none;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 @mixin title {

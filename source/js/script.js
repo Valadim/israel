@@ -120,3 +120,21 @@ window.addEventListener('load', function () {
 window.addEventListener('resize', function () {
   swiperMode();
 });
+
+
+/* Accordion */
+
+var accordion = document.querySelectorAll('.faq__accordion-btn');
+var i;
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('faq__accordion-content--active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
