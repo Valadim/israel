@@ -24,7 +24,7 @@
 
 .how-to-go__title {
   @include title;
-  text-align-last: left;
+  text-align: left;
 }
 
 .how-to-go__descr {
@@ -94,12 +94,6 @@
 
   .how-to-go__title {
     @include title;
-    text-align-last: left;
-  }
-
-  -mobile .how-to-go__title {
-    max-width: 300px;
-    font-size: 20px;
-    line-height: 24px;
+    text-align: left;
   }
 }

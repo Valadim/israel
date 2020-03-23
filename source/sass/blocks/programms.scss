@@ -21,7 +21,6 @@
   @include title;
 }
 
-
 .programms__tabs {
   display: flex;
   justify-content: space-between;
@@ -137,7 +136,7 @@
   //   top: 50%;
   //   right: 0;
   //   border-bottom: 35px solid $white;
-	// border-left: 40px solid transparent;
+  // border-left: 40px solid transparent;
   // }
 
   &::before {
@@ -193,11 +192,9 @@
     $gradient;
 }
 
-
 .programms__tabs-content {
   margin-left: 50px;
 }
-
 
 @media (max-width: 1366px) {}
 

@@ -1,0 +1,45 @@
+.faq {
+  margin: 100px 0;
+  // background: url("../../img/girl-flag-bg.jpg") right top no-repeat,
+  //   url("../../img/backpack.jpg") left top no-repeat;
+
+}
+
+.faq__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.faq__title {
+  @include title;
+  text-align: left;
+}
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: $mobile) {
+
+  // .faq {
+  //   background-image: url("../../img/girl-flag-bg-mobile.jpg");
+  //   background-position: center bottom;
+  //   padding-bottom: 300px;
+  // }
+
+  .faq__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+  }
+
+  .faq__title {
+    @include title-mobile;
+    text-align: center;
+    margin-top: 0;
+  }
+}
