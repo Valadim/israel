@@ -1,0 +1,152 @@
+.cta {
+  padding: 50px 0;
+}
+
+.cta__wrapper {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.cta__inner-wrapper {
+  width: 32%;
+}
+
+.cta__title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+  color: $black;
+  opacity: 0.87;
+}
+
+.cta__descr {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: $black;
+  opacity: 0.5;
+}
+
+.cta__fieldset {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  border: none;
+}
+
+.cta__form-item {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.cta__input-name,
+.cta__input-phone {
+  width: 250px;
+  margin-right: 20px;
+  padding: 20px 80px 20px 40px;
+  border: 2px solid #E3E3E3;
+  border-radius: 80px;
+  transition: border ease .3s;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: $black;
+    opacity: 0.5;
+    ;
+  }
+}
+
+.cta__input-name:hover,
+.cta__input-name:focus,
+.cta__input-phone:hover,
+.cta__input-phone:focus {
+  border: 2px solid $yellow;
+}
+
+.cta__btn-submit {
+  @include btn;
+
+
+  &:hover,
+  &:focus {
+    @include btn-hover;
+  }
+
+  &:active {
+    @include btn-active;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cta__wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .cta__inner-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta__form-item {
+    width: 100%;
+  }
+
+  .cta__input-name,
+  .cta__input-phone {
+    width: 100%;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: $mobile) {
+
+  .cta {
+    padding: 20px 0;
+  }
+
+  .cta__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+  }
+
+  .cta__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+    opacity: 0.87;
+  }
+
+
+  .cta__fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta__input-name,
+  .cta__input-phone {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cta__btn-submit {
+    @include btn;
+    position: relative;
+    z-index: 2;
+    margin-left: 0;
+  }
+}

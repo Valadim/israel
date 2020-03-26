@@ -10,10 +10,10 @@ $buble-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
 $btn-circle: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%),
 $white;
 
-$form-default: 2px solid #E3E3E3;
+$form-default: 2px solid #e3e3e3;
 $form-focus: 2px solid $yellow;
-$form-disable: 2px solid #484848;
-$form-error: 2px solid #FF0000;
+$form-valid: 2px solid #484848;
+$form-invalid: 2px solid #ff0000;
 
 $btn-normal: linear-gradient(142.39deg, #FFC341 20.46%, #FFD701 65.31%);
 $btn-hover: linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);

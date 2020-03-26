@@ -24,7 +24,7 @@
 
 .how-to-go__title {
   @include title;
-  text-align-last: left;
+  text-align: left;
 }
 
 .how-to-go__descr {
@@ -38,10 +38,52 @@
 .how-to-go__steps-list {
   @include list-reset;
   margin-bottom: 30px;
+
+  counter-reset: stepslist;
 }
 
 .how-to-go__step {
-  margin-bottom: 10px;
+  position: relative;
+  margin: 0 0 35px 0;
+  padding: 0 10px 0 30px;
+
+
+  &::before {
+    position: absolute;
+    top: -7px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 36px;
+    color: $yellow;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    background: $white;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+
+    counter-increment: stepslist;
+    content: counter(stepslist);
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed $black;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  &:last-child::after {
+    border: none;
+  }
 }
 
 .how-to-go__notice {
@@ -94,12 +136,6 @@
 
   .how-to-go__title {
     @include title;
-    text-align-last: left;
-  }
-
-  -mobile .how-to-go__title {
-    max-width: 300px;
-    font-size: 20px;
-    line-height: 24px;
+    text-align: left;
   }
 }

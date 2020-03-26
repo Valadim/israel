@@ -1,26 +1,16 @@
 .header {
-  background-image: url("../../img/promo-bg.jpg");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-bottom: -112px;
 }
 
 .header__wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header__top-bar {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
+  align-items: flex-start;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 25px 12px;
 }
 
 .header__phone {
@@ -30,6 +20,7 @@
   color: $black;
   text-decoration: none;
   transition: color ease .3s;
+  margin-top: 23px;
 
   &:hover,
   &:focus {
@@ -37,10 +28,17 @@
   }
 }
 
+.header__logo {
+  margin: 6px 0 0 -22px;
+}
+
 .header__callback {
+  margin: 23px 5px 0px 0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
+
+    letter-spacing: -0.2px;
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
@@ -156,19 +154,19 @@
 @media (max-width: $mobile) {
 
   .header {
-    background-image: url("../../img/promo-mobile-bg.jpg");
-    background-position: center top;
+    margin-bottom: -50px;
   }
 
   .header__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 15px 15px;
+    padding: 10px 10px;
   }
 
   .header__logo {
-    flex-basis: 50%;
+    flex-basis: 40%;
     order: 10;
+    margin: 10px 0 0 6px;
   }
 
   .header__logo-img {
@@ -182,16 +180,14 @@
     text-align: right;
     font-size: 14px;
     line-height: 17px;
-    margin-top: -35px;
-    margin-left: auto;
+    margin: 10px -2px 0px 0;
   }
 
   .header__callback {
     order: 30;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 17px;
-    margin-left: auto;
-    margin-top: -35px;
+    margin: -24px 0 0 auto;
   }
 
   .header__title {

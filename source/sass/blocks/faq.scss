@@ -1,0 +1,185 @@
+.faq {
+  margin: 100px 0;
+  padding: 50px 0;
+  background: url("../../img/faq-photo.png") right center no-repeat,
+    url("../../img/bag-bg.jpg") left bottom no-repeat,
+    url("../../img/faq-bg.jpg") center no-repeat;
+  background-size: auto, auto, cover;
+
+}
+
+.faq__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  // background-image: url("../../img/faq-photo.png");
+  // background-position: right top;
+  // background-size: 645px 803px;
+  // background-repeat: no-repeat;
+}
+
+.faq__inner-wrapper {
+  width: 560px;
+}
+
+.faq__title {
+  @include title;
+  text-align: left;
+}
+
+.faq__list {
+  @include list-reset;
+
+  counter-reset: faqlist;
+}
+
+.faq__item {
+  position: relative;
+  margin: 20px 0;
+  padding: 0 50px 0 20px;
+  border-bottom: 1px solid rgba($black, 0.2);
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 170%;
+    color: $yellow;
+
+    counter-increment: faqlist;
+    content: counter(faqlist);
+  }
+}
+
+.faq__accordion-btn {
+  position: relative;
+  background: none;
+  color: $black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 17px;
+  line-height: 150%;
+  transition: 0.3s;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icon-chevron.svg") center no-repeat;
+    transition: transform ease .3s
+  }
+}
+
+.faq__accordion-content--active::before {
+  transform: rotateX(180deg);
+  transition: transform ease .3s;
+}
+
+
+.faq__accordion-btn:hover {
+  color: $yellow;
+}
+
+.faq__accordion-content {
+  padding: 0 18px;
+  background-color: $white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+@media (max-width: 1200px) {
+  .faq {
+    background: url("../../img/bag-bg.jpg") right bottom no-repeat;
+  }
+
+  .faq__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    background: none;
+  }
+
+  .faq__inner-wrapper {
+    width: 100%;
+  }
+
+  .faq__item {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  .faq__accordion-btn {
+    position: relative;
+    background: none;
+    color: $black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    transition: 0.3s;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background: url("../../img/icon-chevron.svg") center no-repeat;
+      transition: transform ease .3s
+    }
+  }
+
+  .faq__accordion-descr {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: $black;
+    opacity: 0.74;
+  }
+}
+
+
+@media (max-width: $mobile) {
+
+  // .faq {
+  //   background-image: url("../../img/girl-flag-bg-mobile.jpg");
+  //   background-position: center bottom;
+  //   padding-bottom: 300px;
+  // }
+
+  .faq__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    background: none;
+  }
+
+  .faq__inner-wrapper {
+    width: 100%;
+  }
+
+
+  .faq__title {
+    @include title-mobile;
+    text-align: center;
+    margin-top: 0;
+  }
+}
