@@ -1,23 +1,53 @@
 .to-go {
   padding: 100px 0;
-  background: url("../../img/girl-flag-bg.jpg") right top no-repeat,
-    url("../../img/backpack.jpg") left top no-repeat;
-
 }
 
 .to-go__wrapper {
-  width: 1170px;
+  position: relative;
+  width: 978px;
   margin: 0 auto;
   padding: 0 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -209px;
+    right: -194px;
+    width: 818px;
+    height: 594px;
+    background: url("../../img/girl-flag-bg.jpg") center no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -74px;
+    left: -267px;
+    width: 220px;
+    height: 262px;
+    background: url("../../img/backpack.jpg") center no-repeat;
+    z-index: -1;
+  }
 }
 
 .to-go__title {
   @include title;
+  margin-top: 98px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
 .to-go__descr {
   max-width: 400px;
+  margin-bottom: 64px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  color: $black;
+  opacity: 0.87;
 }
 
 .to-go__fieldset {
@@ -35,8 +65,8 @@
 }
 
 .to-go__input-phone {
-  width: 480px;
-  padding: 20px 80px 20px 40px;
+  width: 322px;
+  padding: 18px 80px 18px 39px;
   border: 2px solid #E3E3E3;
   border-radius: 80px;
 
@@ -54,14 +84,19 @@
   @include btn;
   position: relative;
   margin-left: -60px;
+  padding: 20px 39px;
 
   &:hover,
   &:focus {
     @include btn-hover;
+
+    padding: 20px 39px;
   }
 
   &:active {
     @include btn-active;
+
+    padding: 20px 39px;
   }
 }
 
@@ -81,31 +116,59 @@
   }
 }
 
-
 @media (max-width: $mobile) {
 
   .to-go {
-    background-image: url("../../img/girl-flag-bg-mobile.jpg");
-    background-position: center bottom;
-    padding-bottom: 300px;
+    padding: 40px 0
   }
 
   .to-go__wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 15px 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 313px;
+      right: -52px;
+      width: 424px;
+      height: 308px;
+      background: url("../../img/girl-flag-bg.jpg") center no-repeat;
+      background-size: 100% 100%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -29px;
+      left: -54px;
+      width: 158px;
+      height: 188px;
+      background: url("../../img/backpack.jpg") center no-repeat;
+      background-size: 100%;
+      z-index: -1;
+    }
   }
 
   .to-go__title {
-    @include title-mobile;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
     text-align: center;
-    margin-top: 0;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: $blue;
+    margin-top: 7px;
+    margin-bottom: 24px;
   }
 
-  .to-go__title {
-    max-width: 300px;
-    font-size: 20px;
-    line-height: 24px;
+  .to-go__descr {
+    max-width: 400px;
+    margin-bottom: 18px;
   }
 
   .to-go__fieldset {
@@ -121,8 +184,18 @@
 
   .to-go__btn-submit {
     @include btn;
+
     position: relative;
-    z-index: 2;
     margin-left: 0;
+    padding: 20px 63px;
+
+    &:hover,
+    &:focus {
+      padding: 20px 63px;
+    }
+
+    &:active {
+      padding: 20px 63px;
+    }
   }
 }

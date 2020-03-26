@@ -1,26 +1,150 @@
 .live-in-israel {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 50px 0;
-  background-image: url("../../img/live-in-israel-bg.jpg");
-  background-position: right center;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .live-in-israel__wrapper {
-  width: 1170px;
+  position: relative;
+  width: 1188px;
   margin: 0 auto;
   padding: 0 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 950px;
+    background-image: url("../../img/live-in-israel-bg.jpg");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .live-in-israel__title {
   @include title;
+
+  margin-top: 46px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
 .live-in-israel__descr {
-  margin-bottom: 30px;
+  max-width: 720px;
+  margin: 0 auto -20px;
+  font-size: 17px;
+  line-height: 170%;
+  color: rgba($color: $black, $alpha: 0.87);
+  text-align: center;
 }
+
+.live-in-israel__programms-title {
+  margin: auto 20px 30px 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.live-in-israel__programms-list {
+  @include list-reset;
+
+  position: relative;
+  display: flex;
+  height: 750px;
+}
+
+.live-in-israel__programms-item {
+  position: absolute;
+  display: flex;
+
+  &--excursions {
+    top: 0;
+    left: 0px;
+    width: 482px;
+    height: 732px;
+    background-image: url("../../img/excursions.png");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    & .live-in-israel__programms-title {
+      margin: auto 60px 32px 40px;
+    }
+  }
+
+  &--learning {
+    top: 67px;
+    left: 497px;
+    width: 211px;
+    height: 318px;
+    background-image: url("../../img/learning.png");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    & .live-in-israel__programms-title {
+      margin: auto 30px 32px 24px;
+    }
+  }
+
+  &--profession {
+    top: 67px;
+    right: 9px;
+    width: 411px;
+    height: 318px;
+    background-image: url("../../img/profession.png");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    & .live-in-israel__programms-title {
+      margin: auto 40px 32px 32px;
+    }
+  }
+
+  &--collaboration {
+    top: 415px;
+    left: 497px;
+    width: 411px;
+    height: 318px;
+    background-image: url("../../img/collaboration.png");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    & .live-in-israel__programms-title {
+      margin: auto 20px 32px 32px;
+    }
+  }
+
+  &--lider {
+    top: 415px;
+    right: 6px;
+    width: 214px;
+    height: 318px;
+    background-image: url("../../img/lider.png");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    & .live-in-israel__programms-title {
+      margin: auto 40px 32px 24px;
+    }
+  }
+}
+
+
+
+
+
+
 
 // .live-in-israel__programms-list {
 //   @include list-reset;
@@ -50,67 +174,53 @@
 // }
 
 
-.live-in-israel__programms-list {
-  @include list-reset;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: auto;
-}
-
-.live-in-israel__programms-item {
-  position: static;
-  display: flex;
-  // width: 300px;
-  height: auto;
-}
 
 
 
 
 
-@media (min-width: 1200px) {
-  .live-in-israel__programms-list {
-    display: block;
-    padding-top: 80px;
-    overflow: hidden;
-  }
 
-  .live-in-israel__programms-item {
-    display: inline-block;
-    float: left;
-    margin-left: 10px;
-    margin-top: 10px;
+// @media (min-width: 1200px) {
+//   .live-in-israel__programms-list {
+//     display: block;
+//     padding-top: 80px;
+//     overflow: hidden;
+//   }
+
+//   .live-in-israel__programms-item {
+//     display: inline-block;
+//     float: left;
+//     margin-left: 10px;
+//     margin-top: 10px;
 
 
-    &--excursions {
-      margin-top: -60px;
-      width: 482px;
-      height: 732px;
-    }
+//     &--excursions {
+//       margin-top: -60px;
+//       width: 482px;
+//       height: 732px;
+//     }
 
-    &--learning {
-      width: 211px;
-      height: 318px;
-    }
+//     &--learning {
+//       width: 211px;
+//       height: 318px;
+//     }
 
-    &--profession {
-      width: 411px;
-      height: 318px;
-    }
+//     &--profession {
+//       width: 411px;
+//       height: 318px;
+//     }
 
-    &--collaboration {
-      width: 411px;
-      height: 318px;
-    }
+//     &--collaboration {
+//       width: 411px;
+//       height: 318px;
+//     }
 
-    &--lider {
-      width: 214px;
-      height: 318px;
-    }
-  }
-}
+//     &--lider {
+//       width: 214px;
+//       height: 318px;
+//     }
+//   }
+// }
 
 
 // .live-in-israel__programms-item {

@@ -1,57 +1,109 @@
 .how-to-go {
   margin-top: 100px;
   padding: 50px 0;
-  background-image: url("../../img/how-to-go-stamp-bg.jpg");
-  background-position: right center;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .how-to-go__wrapper {
-  width: 1170px;
+  position: relative;
+  width: 1082px;
   margin: 0 auto;
   padding: 0 15px;
-  background-image: url("../../img/how-to-go-img.jpg");
-  background-position: left center;
-  background-size: auto;
-  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -232px;
+    left: -142px;
+    width: 1366px;
+    height: 1208px;
+    background-image: url("../../img/how-to-go-bg.jpg");
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -130px;
+    top: -32px;
+    width: 581px;
+    height: 707px;
+    background-image: url("../../img/how-to-go-img.png");
+    background-position: left center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .how-to-go__inner-wrapper {
-  max-width: 480px;
+  position: relative;
+  max-width: 510px;
   margin-left: auto;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -278px;
+    top: 178px;
+    width: 337px;
+    height: 254px;
+    background-image: url("../../img/how-to-go-stamp-bg.png");
+    background-position: right center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .how-to-go__title {
   @include title;
   text-align: left;
+
+  margin-top: 72px;
+  margin-bottom: 24px;
 }
 
 .how-to-go__descr {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   &--bold {
     font-weight: 700;
+    font-size: 17px;
+    line-height: 170%;
+    margin-bottom: 30px;
   }
 }
 
 .how-to-go__steps-list {
   @include list-reset;
-  margin-bottom: 30px;
+
+  margin-top: 30px;
+  margin-bottom: 46px;
 
   counter-reset: stepslist;
 }
 
 .how-to-go__step {
   position: relative;
-  margin: 0 0 35px 0;
-  padding: 0 10px 0 30px;
+  font-size: 15px;
+  line-height: 140%;
+  color: rgba($color: $black, $alpha: 0.87);
+  margin: 0 0 47px 0;
+  padding: 0 10px 0 44px;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
 
 
   &::before {
     position: absolute;
-    top: -7px;
-    left: -18px;
+    top: -6px;
+    left: -16px;
     width: 36px;
     height: 36px;
     font-weight: bold;
@@ -88,15 +140,17 @@
 
 .how-to-go__notice {
   position: relative;
-  padding-left: 20px;
-  color: $black;
-  opacity: 0.5;
+  padding-left: 15px;
+
+  font-size: 15px;
+  line-height: 140%;
+  color: rgba($color: $black, $alpha: 0.5);
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: -2px;
     width: 4px;
     height: 100%;
     background-image: $gradient;
@@ -119,12 +173,11 @@
   }
 }
 
-
 @media (max-width: $mobile) {
 
   .how-to-go {
-    // background-image: url("../../img/promo-mobile-bg.jpg");
-    // background-position: center top;
+    margin-top: 257px;
+    padding: 30px 0;
   }
 
   .how-to-go__wrapper {
@@ -132,10 +185,76 @@
     margin: 0 auto;
     padding: 15px 15px;
     background: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .how-to-go__inner-wrapper::before {
+    right: -63px;
+    top: 272px;
+    width: 264px;
+    height: 199px;
+    background-image: url("../../img/how-to-go-stamp-mobile.png");
+    background-position: right center;
   }
 
   .how-to-go__title {
-    @include title;
-    text-align: left;
+    @include title-mobile;
+
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
   }
+
+  .how-to-go__descr {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba($color: $black, $alpha: 0.87);
+    margin-bottom: 27px;
+
+    &--bold {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      color: $black;
+    }
+  }
+
+  .how-to-go__steps-list {
+    margin: 30px 0 26px;
+  }
+
+  .how-to-go__step {
+    margin: 0 0 37px;
+
+    &::before {
+      top: -4px;
+      left: -7px;
+    }
+
+    &::after {
+      top: 35px;
+      left: 11px;
+      height: 120%;
+    }
+  }
+
+  .how-to-go__notice {
+    padding-left: 9px;
+    font-size: 14px;
+    line-height: 160%;
+
+    &::before {
+      left: -5px;
+    }
+  }
+
 }
