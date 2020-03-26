@@ -1,19 +1,4 @@
 'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-
-// pageHeader.classList.remove('page-header--nojs');
-
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
-
 
 /* Programms Tabs */
 function openProgramm(evt, progName) {
@@ -34,30 +19,6 @@ function openProgramm(evt, progName) {
 
 document.getElementById('defaultOpen').click();
 /* Programms Tabs END*/
-
-// var swiper = new Swiper(".swiper-container", {
-//   pagination: {
-//     el: ".swiper-pagination"
-//   },
-//   loop: true,
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 20,
-
-//     },
-//     // when window width is >= 480px
-//     480: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     // when window width is >= 640px
-//     767: {
-//       slidesPerView: 5
-//     }
-//   }
-// });
 
 
 // basic slider prefferences
@@ -138,3 +99,253 @@ for (i = 0; i < accordion.length; i++) {
     }
   });
 }
+
+/* Slider Testimonials */
+
+var swiper = new Swiper('.slider--testimonials', {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  wrapperClass: 'slider__testimonials-list',
+  slideClass: 'slider__testimonials-item',
+  slideActiveClass: 'slider__testimonials-item--active',
+  slideNextClass: 'slider__testimonials-next',
+  slidePrevClass: 'slider__testimonials-prev',
+  slideDuplicatePrevClass: 'slider__testimonials-duplicate-prev',
+  slideDuplicateNextClass: 'slider__testimonials-duplicate-next',
+  loop: true,
+  pagination: {
+    el: '.slider__testimonials-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.slider__testimonials-btn-next',
+    prevEl: '.slider__testimonials-btn-prev',
+  },
+});
+
+/* Modals */
+
+// var callBackLink = document.querySelector('.header__callback');
+// var modalCallback = document.querySelector('.modals--callback');
+// var modalCloseBtn = document.querySelector('.modals__close-btn');
+// var displayNoneClass = 'modals--hide';
+// var inputName = document.querySelector('.modals__input-name');
+// var body = document.querySelector('body');
+
+// function existVerticalScroll() {
+//   return document.body.offsetHeight > window.innerHeight;
+// }
+
+// function getBodyScrollTop() {
+//   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
+//     document.body.scrollTop);
+// }
+
+// function enableScroll() {
+//   if (existVerticalScroll()) {
+//     body.classList.remove('body-lock')
+//     window.scrollTo(0, body.dataset.scrollY)
+//   }
+// }
+
+// function modalOpening(btn, modal, className) {
+
+//   body.dataset.scrollY = getBodyScrollTop();
+
+//   btn.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     modal.classList.remove(className);
+
+//     inputName.focus();
+
+//     if (existVerticalScroll()) {
+//       body.classList.add('body-lock')
+//       body.style.top = -body.dataset.scrollY + 'px';
+//       console.log(body.style.top);
+//     }
+//   });
+// }
+
+// function modalClosing(btn, modal, className) {
+
+//   btn.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     modal.classList.add(className);
+//     enableScroll();
+//   });
+
+//   window.addEventListener('click', function (evt) {
+//     if (evt.target == modal) {
+//       modal.classList.add(className);
+//       enableScroll();
+//     }
+//   });
+
+//   window.addEventListener('keydown', function (evt) {
+//     if (evt.keyCode === 27) {
+//       evt.preventDefault();
+//       if (!modal.classList.contains(className)) {
+//         modal.classList.add(className);
+//         enableScroll();
+//       }
+//     }
+//   });
+// }
+
+// modalOpening(callBackLink, modalCallback, displayNoneClass);
+
+// modalClosing(modalCloseBtn, modalCallback, displayNoneClass);
+
+
+var callBackLink = document.querySelector('.header__callback');
+var modalCallback = document.querySelector('.modals--callback');
+var modalSent = document.querySelector('.modals--sent');
+var modalCloseBtn = document.querySelectorAll('.modals__close-btn');
+var displayNoneClass = 'modals--hide';
+var inputName = document.querySelector('.modals__input-name');
+var body = document.querySelector('body');
+
+var toGoPhoneNumber = document.querySelector('#to-go__phone-number');
+var toGoBtnSubmit = document.querySelector('.to-go__btn-submit');
+
+var ctaPhoneNumber = document.querySelector('#cta__phone-number');
+var ctaNameValue = document.querySelector('#cta__name');
+var ctaBtnSubmit = document.querySelector('.cta__btn-submit');
+
+var modalPhoneNumber = document.querySelector('#modals__phone-number');
+var modalNameValue = document.querySelector('#modals__name');
+var modalBtnSubmit = document.querySelector('.modals__btn-submit');
+
+var modalDoneBtn = document.querySelectorAll('.modals__done-btn');
+
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
+var toGoPhoneNumberMask = IMask(toGoPhoneNumber, maskOptions);
+var ctaPhoneNumberMask = IMask(ctaPhoneNumber, maskOptions);
+var modalPhoneNumberMask = IMask(modalPhoneNumber, maskOptions);
+
+
+function setDataFromeStorage(el, val) {
+  if (localStorage.getItem(val) !== null) {
+    el.value = localStorage.getItem(val);
+  } else {
+    el.value = '';
+  }
+}
+
+setDataFromeStorage(toGoPhoneNumber, 'toGoPhone');
+setDataFromeStorage(ctaPhoneNumber, 'ctaPhone');
+setDataFromeStorage(ctaNameValue, 'ctaName');
+setDataFromeStorage(modalPhoneNumber, 'modalPhone');
+setDataFromeStorage(modalNameValue, 'modalName');
+
+
+
+function existVerticalScroll() {
+  return document.body.offsetHeight > window.innerHeight;
+}
+
+function getBodyScrollTop() {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
+    document.body.scrollTop);
+}
+
+function enableScroll() {
+  if (existVerticalScroll()) {
+    body.classList.remove('body-lock')
+    window.scrollTo(0, body.dataset.scrollY)
+  }
+}
+
+function modalOpening(btn, modal, className) {
+
+  body.dataset.scrollY = getBodyScrollTop();
+
+  btn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove(className);
+
+    inputName.focus();
+
+    if (existVerticalScroll()) {
+      body.classList.add('body-lock')
+      body.style.top = `-${body.dataset.scrollY}px`;
+    }
+
+  });
+}
+
+function modalClosing(btn, modal, className) {
+
+  for (var i = 0; i < btn.length; i++) {
+
+    btn[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      modal.classList.add(className);
+      enableScroll();
+    });
+  }
+
+  window.addEventListener('click', function (evt) {
+    if (evt.target == modal) {
+      modal.classList.add(className);
+      enableScroll();
+    }
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (!modal.classList.contains(className)) {
+        modal.classList.add(className);
+        enableScroll();
+      }
+    }
+  });
+}
+
+
+function displaySentSuccessfull(btn, modal, phoneElem, phoneKey, nameElem, nameKey) {
+  body.dataset.scrollY = getBodyScrollTop();
+
+  btn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.remove(displayNoneClass);
+
+    if (localStorage.getItem(phoneKey) !== null) {
+      localStorage.setItem(phoneKey, '');
+    }
+
+    if (localStorage.getItem(nameKey) !== null) {
+      localStorage.setItem(nameKey, '');
+    }
+
+    var phoneValue = phoneElem.value;
+    localStorage.setItem(phoneKey, phoneValue);
+
+    var nameValue = nameElem.value;
+    localStorage.setItem(nameKey, nameValue);
+
+
+    if (!modalCallback.classList.contains(displayNoneClass)) {
+      modalCallback.classList.add(displayNoneClass);
+    }
+
+    if (existVerticalScroll()) {
+      body.classList.add('body-lock')
+      body.style.top = -body.dataset.scrollY + 'px';
+    }
+  });
+}
+
+modalOpening(callBackLink, modalCallback, displayNoneClass);
+modalClosing(modalCloseBtn, modalCallback, displayNoneClass);
+
+modalClosing(modalCloseBtn, modalSent, displayNoneClass);
+modalClosing(modalDoneBtn, modalSent, displayNoneClass);
+
+displaySentSuccessfull(toGoBtnSubmit, modalSent, toGoPhoneNumber, 'toGoPhone', ctaNameValue, 'toGoName');
+displaySentSuccessfull(ctaBtnSubmit, modalSent, ctaPhoneNumber, 'ctaPhone', ctaNameValue, 'ctaName');
+displaySentSuccessfull(modalBtnSubmit, modalSent, modalPhoneNumber, 'modalPhone', modalNameValue, 'modalName');

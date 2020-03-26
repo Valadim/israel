@@ -42,31 +42,43 @@
     <symbol id="icon-arrow" viewBox="0 0 11 18">
       <path d="M1 16.5L9 9L0.999999 1.5" stroke="currentColor" stroke-width="2"></path>
     </symbol>
+    <symbol id="icon-cross" viewBox="0 0 18 17">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48467 8.5L0 1.50703L1.41767 2.46254e-07L9 7.08422L16.5823 0L18 1.50703L10.5153 8.5L18 15.493L16.5823 17L9 9.91578L1.41767 17L6.13436e-07 15.493L7.48467 8.5Z" fill="currentColor"></path>
+      <!-- <defs>
+        <linearGradient id="paint0_linear" x1="4.73684" y1="0.485716" x2="14.6703" y2="3.98809"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FFC341" />
+          <stop offset="0.963542" stop-color="#FFD701" />
+        </linearGradient>
+      </defs> -->
+    </symbol>
   </svg>
 
 
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__top-bar">
-        <a href="tel:+97226216581" class="header__phone">+ (972) 2 – 621 – 6581</a>
+      <a href="tel:+97226216581" class="header__phone">+ (972) 2 – 621 – 6581</a>
 
-        <a class="header__logo">
-          <img src="img/logo.png" srcset="img/logo@2x.png" alt="Логотип Маса" class="header__logo-img" width="137" height="48">
-        </a>
+      <a class="header__logo">
+        <img src="img/logo.png" srcset="img/logo@2x.png" alt="Логотип Маса" class="header__logo-img" width="137" height="48">
+      </a>
 
-        <a href="#" class="header__callback">заказать звонок</a>
-      </div>
-
-      <h1 class="header__title">Учёба, путешествие и карьера
-        для еврейской молодёжи</h1>
-      <button type="button" class="header__btn">
-        <span class="visually-hidden">Узнать о программе</span>
-        <img src="img/mouse.png" srcset="img/mouse@2x.png" alt="листать вниз" class="header__btn-icon" width="17" height="26">
-      </button>
+      <a href="#" class="header__callback">заказать звонок</a>
     </div>
   </header>
 
   <main class="main">
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Учёба, путешествие и карьера
+          для еврейской молодёжи</h1>
+        <button type="button" class="promo__btn">
+          <span class="visually-hidden">Узнать о программе</span>
+          <img src="img/mouse.png" srcset="img/mouse@2x.png" alt="листать вниз" class="promo__btn-icon" width="17" height="26">
+        </button>
+      </div>
+    </section>
 
 
     <section class="about">
@@ -78,29 +90,30 @@
           предусмотрен грант от 4200 до
           8400$.
         </p>
-        <div class="about__video-wrapper">
-          <button type="button" class="about__video-play-btn">
+      </div>
+      <div class="about__video-wrapper">
+        <button type="button" class="about__video-play-btn">
 
-            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
-              <circle class="circle2" cx="48" cy="48" r="32" fill="white"></circle>
-              <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"></path>
-            </svg>
+          <svg class="about__video-btn-icon" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
+            <circle class="circle2" cx="48" cy="48" r="32" fill="white"></circle>
+            <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"></path>
+          </svg>
 
-            <!-- <div class="icon-play">
+          <!-- <div class="icon-play">
               <div class="circle1"></div>
               <div class="circle2"></div>
               <div class="triangle"></div>
             </div> -->
 
-            <!-- <svg class="about__video-play-btn-icon" width="96" height="96">
+          <!-- <svg class="about__video-play-btn-icon" width="96" height="96">
               <use xlink:href="#play-btn"></use>
             </svg> -->
 
-            <span class="visually-hidden">Включить презентацию о программе</span>
-          </button>
-        </div>
+          <span class="visually-hidden">Включить презентацию о программе</span>
+        </button>
       </div>
+
     </section>
     <!-- /.about -->
 
@@ -340,10 +353,10 @@
 
       <div class="testimonials__wrapper">
         <h2 class="testimonials__title">Отзывы</h2>
-        <div class="testimonials__wrapper slider">
+        <div class="testimonials__wrapper slider slider--testimonials">
 
-          <ul class="testimonials__list slider__list">
-            <li class="testimonials__item slider__item">
+          <ul class="testimonials__list slider__testimonials-list">
+            <li class="testimonials__item slider__testimonials-item">
               <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
               <blockquote class="testimonials__content">
                 <cite class="testimonials__author-name">Ольга Михайлова</cite>
@@ -364,7 +377,87 @@
               </blockquote>
             </li>
 
-            <li class="testimonials__item slider__item">
+            <li class="testimonials__item slider__testimonials-item">
+              <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
+              <blockquote class="testimonials__content">
+                <cite class="testimonials__author-name">Наталья Кучерина</cite>
+                <p class="testimonials__programm">
+                  <span class="testimonials__programm-label">Программа:</span>
+                  Арт-Тель, февраль-сетнябрь 2018
+                </p>
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <a href="#" class="testimonials__link-more">Читать подробнее</a>
+              </blockquote>
+            </li>
+
+            <li class="testimonials__item slider__testimonials-item">
+              <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
+              <blockquote class="testimonials__content">
+                <cite class="testimonials__author-name">Наталья Кучерина</cite>
+                <p class="testimonials__programm">
+                  <span class="testimonials__programm-label">Программа:</span>
+                  Арт-Тель, февраль-сетнябрь 2018
+                </p>
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <a href="#" class="testimonials__link-more">Читать подробнее</a>
+              </blockquote>
+            </li>
+
+            <li class="testimonials__item slider__testimonials-item">
+              <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
+              <blockquote class="testimonials__content">
+                <cite class="testimonials__author-name">Наталья Кучерина</cite>
+                <p class="testimonials__programm">
+                  <span class="testimonials__programm-label">Программа:</span>
+                  Арт-Тель, февраль-сетнябрь 2018
+                </p>
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <a href="#" class="testimonials__link-more">Читать подробнее</a>
+              </blockquote>
+            </li>
+
+            <li class="testimonials__item slider__testimonials-item">
+              <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
+              <blockquote class="testimonials__content">
+                <cite class="testimonials__author-name">Наталья Кучерина</cite>
+                <p class="testimonials__programm">
+                  <span class="testimonials__programm-label">Программа:</span>
+                  Арт-Тель, февраль-сетнябрь 2018
+                </p>
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <p class="testimonials__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. Семантика буквоград рекламных рукопись коварных своего необходимыми букв снова над,
+                  осталось речью продолжил lorem которое курсивных меня, несколько взгляд пунктуация.</p>
+
+                <a href="#" class="testimonials__link-more">Читать подробнее</a>
+              </blockquote>
+            </li>
+
+            <li class="testimonials__item slider__testimonials-item">
               <img src="img/testimonials-img.jpg" alt="Ольга Михайлова" class="testimonials__author-photo">
               <blockquote class="testimonials__content">
                 <cite class="testimonials__author-name">Наталья Кучерина</cite>
@@ -386,7 +479,11 @@
           </ul>
 
           <div class="testimonials__bottom">
-            <div class="slider__controlls"></div>
+            <!-- Add Pagination -->
+            <div class="slider__testimonials-pagination"></div>
+            <!-- Add Arrows -->
+            <button class="slider__testimonials-btn-prev">Предыдущий слайд</button>
+            <button class="slider__testimonials-btn-next">Следующий слайд</button>
             <div class="socials">
               <ul class="socials__list">
                 <li class="socials__item">
@@ -571,7 +668,229 @@
     </div>
   </footer>
 
+  <div class="modals modals--callback modals--hide">
+    <div class="modals__wrapper">
+
+      <button class="modals__close-btn">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+        <!-- <svg class="modals__close-btn-icon" width="18" height="17">
+          <use xlink:href="#icon-cross"></use>
+        </svg> -->
+      </button>
+
+      <p class="modals__title">Заказать звонок</p>
+      <p class="modals__descr">
+        Оставьте ваши контактные данные, мы свяжемся
+        с вами в течение рабочего дня и обязательно
+        поможем найти ответ на ваш вопрос!
+      </p>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="modals__form">
+        <div class="modals__fieldset">
+          <p class="modals__form-item">
+            <input class="modals__input-name" id="modals__name" type="text" name="Имя:" placeholder="Имя">
+            <label class="visually-hidden" for="modals__name">Имя:</label>
+          </p>
+          <p class="modals__form-item">
+            <input class="modals__input-phone" id="modals__phone-number" type="tel" name="Номер телефона:" placeholder="Телефон">
+            <label class="visually-hidden" for="modals__phone-number">Номер
+              телефона:</label>
+          </p>
+          <button type="submit" class="modals__btn-submit">перезвоните мне</button>
+          <p class="modals__form-item modals__form-item--checkbox">
+            <input class="modals__input-checkbox visually-hidden" type="checkbox" name="С условиями согласен" id="input-checkbox">
+            <label class="modals__input-checkbox-label" for="input-checkbox">
+              Нажимая на кнопку, вы даёте согласие
+              на обработку персональных данных</label>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modals modals--sent modals--hide">
+    <div class="modals__wrapper modals__wrapper--sent">
+
+      <button class="modals__close-btn">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <img src="img/icon-ok.svg" alt="Сообщение успешно отправленно" class="modals__img" width="66" height="64">
+      <p class="modals__title">Заявка принята</p>
+      <p class="modals__descr modals__descr--sent">
+        Мы приняли ваши данные и вскоре мы
+        перезвоним вам для уточнения деталей!
+      </p>
+      <button class="modals__btn-submit modals__done-btn">Понятно</button>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/imask"></script>
+
+  <script>
+    // var callBackLink = document.querySelector('.header__callback');
+    // var modalCallback = document.querySelector('.modals--callback');
+    // var modalSent = document.querySelector('.modals--sent');
+    // var modalCloseBtn = document.querySelectorAll('.modals__close-btn');
+    // var displayNoneClass = 'modals--hide';
+    // var inputName = document.querySelector('.modals__input-name');
+    // var body = document.querySelector('body');
+
+    // var toGoPhoneNumber = document.querySelector('#to-go__phone-number');
+    // var toGoBtnSubmit = document.querySelector('.to-go__btn-submit');
+
+    // var ctaPhoneNumber = document.querySelector('#cta__phone-number');
+    // var ctaNameValue = document.querySelector('#cta__name');
+    // var ctaBtnSubmit = document.querySelector('.cta__btn-submit');
+
+    // var modalPhoneNumber = document.querySelector('#modals__phone-number');
+    // var modalNameValue = document.querySelector('#modals__name');
+    // var modalBtnSubmit = document.querySelector('.modals__btn-submit');
+
+    // var modalDoneBtn = document.querySelectorAll('.modals__done-btn');
+
+    // var maskOptions = {
+    //   mask: '+{7}(000)000-00-00'
+    // };
+
+    // var toGoPhoneNumberMask = IMask(toGoPhoneNumber, maskOptions);
+    // var ctaPhoneNumberMask = IMask(ctaPhoneNumber, maskOptions);
+    // var modalPhoneNumberMask = IMask(modalPhoneNumber, maskOptions);
+
+
+    // function setDataFromeStorage(el, val) {
+    //   if (localStorage.getItem(val) !== null) {
+    //     el.value = localStorage.getItem(val);
+    //   } else {
+    //     el.value = '';
+    //   }
+    // }
+
+    // setDataFromeStorage(toGoPhoneNumber, 'toGoPhone');
+    // setDataFromeStorage(ctaPhoneNumber, 'ctaPhone');
+    // setDataFromeStorage(ctaNameValue, 'ctaName');
+    // setDataFromeStorage(modalPhoneNumber, 'modalPhone');
+    // setDataFromeStorage(modalNameValue, 'modalName');
+
+
+
+    // function existVerticalScroll() {
+    //   return document.body.offsetHeight > window.innerHeight;
+    // }
+
+    // function getBodyScrollTop() {
+    //   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
+    //     document.body.scrollTop);
+    // }
+
+    // function enableScroll() {
+    //   if (existVerticalScroll()) {
+    //     body.classList.remove('body-lock')
+    //     window.scrollTo(0, body.dataset.scrollY)
+    //   }
+    // }
+
+    // function modalOpening(btn, modal, className) {
+
+    //   body.dataset.scrollY = getBodyScrollTop();
+
+    //   btn.addEventListener('click', function (evt) {
+    //     evt.preventDefault();
+    //     modal.classList.remove(className);
+
+    //     inputName.focus();
+
+    //     if (existVerticalScroll()) {
+    //       body.classList.add('body-lock')
+    //       body.style.top = `-${body.dataset.scrollY}px`;
+    //     }
+
+    //   });
+    // }
+
+    // function modalClosing(btn, modal, className) {
+
+    //   for (var i = 0; i < btn.length; i++) {
+
+    //     btn[i].addEventListener('click', function (evt) {
+    //       evt.preventDefault();
+    //       modal.classList.add(className);
+    //       enableScroll();
+    //     });
+    //   }
+
+    //   window.addEventListener('click', function (evt) {
+    //     if (evt.target == modal) {
+    //       modal.classList.add(className);
+    //       enableScroll();
+    //     }
+    //   });
+
+    //   window.addEventListener('keydown', function (evt) {
+    //     if (evt.keyCode === 27) {
+    //       evt.preventDefault();
+    //       if (!modal.classList.contains(className)) {
+    //         modal.classList.add(className);
+    //         enableScroll();
+    //       }
+    //     }
+    //   });
+    // }
+
+
+    // function displaySentSuccessfull(btn, modal, phoneElem, phoneKey, nameElem, nameKey) {
+    //   body.dataset.scrollY = getBodyScrollTop();
+
+    //   btn.addEventListener('click', function (evt) {
+    //     evt.preventDefault();
+    //     modal.classList.remove(displayNoneClass);
+
+    //     if (localStorage.getItem(phoneKey) !== null) {
+    //       localStorage.setItem(phoneKey, '');
+    //     }
+
+    //     if (localStorage.getItem(nameKey) !== null) {
+    //       localStorage.setItem(nameKey, '');
+    //     }
+
+    //     var phoneValue = phoneElem.value;
+    //     localStorage.setItem(phoneKey, phoneValue);
+
+    //     var nameValue = nameElem.value;
+    //     localStorage.setItem(nameKey, nameValue);
+
+
+    //     if (!modalCallback.classList.contains(displayNoneClass)) {
+    //       modalCallback.classList.add(displayNoneClass);
+    //     }
+
+    //     if (existVerticalScroll()) {
+    //       body.classList.add('body-lock')
+    //       body.style.top = -body.dataset.scrollY + 'px';
+    //     }
+    //   });
+    // }
+
+    // modalOpening(callBackLink, modalCallback, displayNoneClass);
+    // modalClosing(modalCloseBtn, modalCallback, displayNoneClass);
+
+    // modalClosing(modalCloseBtn, modalSent, displayNoneClass);
+    // modalClosing(modalDoneBtn, modalSent, displayNoneClass);
+
+    // displaySentSuccessfull(toGoBtnSubmit, modalSent, toGoPhoneNumber, 'toGoPhone', ctaNameValue, 'toGoName');
+    // displaySentSuccessfull(ctaBtnSubmit, modalSent, ctaPhoneNumber, 'ctaPhone', ctaNameValue, 'ctaName');
+    // displaySentSuccessfull(modalBtnSubmit, modalSent, modalPhoneNumber, 'modalPhone', modalNameValue, 'modalName');
+
+    /* phone validity */
+
+  </script>
+
+  <!-- <script src="https://unpkg.com/imask"></script> -->
+  <!-- <script src="js/vendor/imask.js"></script> -->
   <script src="js/vendor/swiper/swiper.min.js"></script>
+
+
   <script src="js/script.js"></script>
 
 </body>
