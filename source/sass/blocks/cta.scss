@@ -1,5 +1,5 @@
 .cta {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .cta__wrapper {
@@ -11,10 +11,12 @@
 }
 
 .cta__inner-wrapper {
-  width: 32%;
+  max-width: 340px;
 }
 
 .cta__title {
+  margin-top: 21px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 17px;
   line-height: 150%;
@@ -33,7 +35,7 @@
 .cta__fieldset {
   display: flex;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   padding: 0;
   border: none;
 }
@@ -47,7 +49,7 @@
 .cta__input-name,
 .cta__input-phone {
   width: 250px;
-  margin-right: 20px;
+  margin-right: 24px;
   padding: 20px 80px 20px 40px;
   border: 2px solid #E3E3E3;
   border-radius: 80px;
@@ -122,11 +124,18 @@
   }
 
   .cta__title {
+    margin-top: 34px;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: $black;
+    text-align: left;
     opacity: 0.87;
+  }
+
+  .cta__descr {
+    text-align: left;
+    margin-bottom: 18px;
   }
 
 
@@ -145,8 +154,10 @@
 
   .cta__btn-submit {
     @include btn;
-    position: relative;
-    z-index: 2;
+
+
+    margin-top: 8px;
     margin-left: 0;
+    padding: 20px 62px;
   }
 }
