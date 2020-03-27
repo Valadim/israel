@@ -102,6 +102,8 @@ for (i = 0; i < accordion.length; i++) {
 
 /* Slider Testimonials */
 
+
+
 var swiper = new Swiper('.slider--testimonials', {
   spaceBetween: 0,
   slidesPerView: 1,
@@ -122,6 +124,7 @@ var swiper = new Swiper('.slider--testimonials', {
     prevEl: '.slider__testimonials-btn-prev',
   },
 });
+
 
 /* Modals */
 

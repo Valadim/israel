@@ -12,7 +12,11 @@
 <stop stop-color="#FFC341"/>
 <stop offset="0.963542" stop-color="#FFD701"/>
 </linearGradient>
-</defs><symbol id="icon-arrow" viewBox="0 0 11 18">
+</defs><symbol id="icon-arrow-left" viewBox="0 0 11 18">
+<path opacity="0.2" d="M10 1.5L2 9L10 16.5" stroke="#484848" stroke-width="2"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 11 18">
+<path opacity="0.2" d="M1 16.5L9 9L0.999999 1.5" stroke="#484848" stroke-width="2"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 11 18">
 <path opacity="0.2" d="M1 16.5L9 9L0.999999 1.5" stroke="#484848" stroke-width="2"/>
 </symbol><symbol id="icon-chevron" viewBox="0 0 17 11">
 <path d="M1 1L8.5 9L16 1" stroke="#1FC0FC" stroke-width="2"/>

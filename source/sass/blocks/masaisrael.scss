@@ -1,11 +1,13 @@
 .masaisraerl {
-  padding: 100px 0;
+  margin-top: 150px;
+  padding: 100px 0 200px;
   background: url("../../img/masaisrael-bg.jpg") center bottom no-repeat;
   background-size: cover;
+  background-position: 4px -7px;
 }
 
 .masaisraerl__wrapper {
-  width: 1170px;
+  width: 1056px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -18,11 +20,18 @@
 .masaisraerl__title {
   @include title;
   text-align: left;
+
+  margin-top: 13px;
+  margin-bottom: 26px;
 }
 
 .masaisraerl__descr {
+  margin-top: 18px;
+  margin-bottom: 49px;
+  padding-left: 3px;
   font-size: 17px;
   line-height: 170%;
+  letter-spacing: 0.1px;
   color: $white;
   opacity: 0.87;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
@@ -32,13 +41,13 @@
   @include btn;
 
   position: relative;
-  padding-left: 60px;
+  padding: 20px 40px 19px 72px;
 
   &::before {
     content: "";
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 42px;
     width: 20px;
     height: 20px;
     background: url("../../img/icon-instagram.svg") center no-repeat;
@@ -113,20 +122,26 @@
     padding: 15px 15px;
   }
 
-
-
   .masaisraerl__title {
     @include title-mobile;
-    text-align: center;
-    margin-top: -150px;
+
+    margin-top: -115px;
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 49px;
   }
 
   .masaisraerl__descr {
-    padding: 80px 0;
+    padding: 80px 0 11px 8px;
   }
 
   .masaisraerl__btn {
-    margin-bottom: -130px;
+    margin-bottom: -90px;
     text-align: center;
+    padding: 20px 56px 19px 90px;
+
+    &::before {
+      left: 59px;
+    }
   }
 }

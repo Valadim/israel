@@ -5,7 +5,7 @@
 }
 
 .socials__item {
-  margin-right: 20px;
+  margin-right: 17px;
 
   &:last-child {
     margin-right: 0;
@@ -22,5 +22,44 @@
   &:focus {
     opacity: 0.5;
     color: $blue;
+  }
+}
+
+.socials--testimonials {
+  margin-right: 115px;
+}
+
+.socials--contacts {
+  margin-left: -4px;
+
+  & .socials__item {
+    margin-right: 12px;
+  }
+}
+
+.socials--footer .socials__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .socials--footer {
+    margin-left: -8px;
+  }
+
+  .socials--footer .socials__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .socials--footer .socials__icon {
+    width: 32px;
+    height: 32px;
   }
 }
