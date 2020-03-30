@@ -104,101 +104,8 @@ for (i = 0; i < accordion.length; i++) {
 
 
 
-// var swiper = new Swiper('.slider--testimonials', {
-//   spaceBetween: 0,
-//   slidesPerView: 1,
-//   wrapperClass: 'slider__testimonials-list',
-//   slideClass: 'slider__testimonials-item',
-//   slideActiveClass: 'slider__testimonials-item--active',
-//   slideNextClass: 'slider__testimonials-next',
-//   slidePrevClass: 'slider__testimonials-prev',
-//   slideDuplicatePrevClass: 'slider__testimonials-duplicate-prev',
-//   slideDuplicateNextClass: 'slider__testimonials-duplicate-next',
-//   loop: true,
-//   pagination: {
-//     el: '.slider__testimonials-pagination',
-//     type: 'fraction',
-//   },
-//   navigation: {
-//     nextEl: '.slider__testimonials-btn-next',
-//     prevEl: '.slider__testimonials-btn-prev',
-//   },
-// });
 
-
-/* Modals */
-
-// var callBackLink = document.querySelector('.header__callback');
-// var modalCallback = document.querySelector('.modals--callback');
-// var modalCloseBtn = document.querySelector('.modals__close-btn');
-// var displayNoneClass = 'modals--hide';
-// var inputName = document.querySelector('.modals__input-name');
-// var body = document.querySelector('body');
-
-// function existVerticalScroll() {
-//   return document.body.offsetHeight > window.innerHeight;
-// }
-
-// function getBodyScrollTop() {
-//   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
-//     document.body.scrollTop);
-// }
-
-// function enableScroll() {
-//   if (existVerticalScroll()) {
-//     body.classList.remove('body-lock')
-//     window.scrollTo(0, body.dataset.scrollY)
-//   }
-// }
-
-// function modalOpening(btn, modal, className) {
-
-//   body.dataset.scrollY = getBodyScrollTop();
-
-//   btn.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.remove(className);
-
-//     inputName.focus();
-
-//     if (existVerticalScroll()) {
-//       body.classList.add('body-lock')
-//       body.style.top = -body.dataset.scrollY + 'px';
-//       console.log(body.style.top);
-//     }
-//   });
-// }
-
-// function modalClosing(btn, modal, className) {
-
-//   btn.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//     modal.classList.add(className);
-//     enableScroll();
-//   });
-
-//   window.addEventListener('click', function (evt) {
-//     if (evt.target == modal) {
-//       modal.classList.add(className);
-//       enableScroll();
-//     }
-//   });
-
-//   window.addEventListener('keydown', function (evt) {
-//     if (evt.keyCode === 27) {
-//       evt.preventDefault();
-//       if (!modal.classList.contains(className)) {
-//         modal.classList.add(className);
-//         enableScroll();
-//       }
-//     }
-//   });
-// }
-
-// modalOpening(callBackLink, modalCallback, displayNoneClass);
-
-// modalClosing(modalCloseBtn, modalCallback, displayNoneClass);
-
+// Modals And Forms
 
 var callBackLink = document.querySelector('.header__callback');
 var modalCallback = document.querySelector('.modals--callback');
@@ -243,8 +150,6 @@ setDataFromeStorage(ctaPhoneNumber, 'ctaPhone');
 setDataFromeStorage(ctaNameValue, 'ctaName');
 setDataFromeStorage(modalPhoneNumber, 'modalPhone');
 setDataFromeStorage(modalNameValue, 'modalName');
-
-
 
 function existVerticalScroll() {
   return document.body.offsetHeight > window.innerHeight;
