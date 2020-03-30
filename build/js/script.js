@@ -102,8 +102,26 @@ for (i = 0; i < accordion.length; i++) {
 
 /* Slider Testimonials */
 
-
-
+var swiper = new Swiper('.testimonials__slider-container', {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  wrapperClass: 'testimonials__list',
+  slideClass: 'testimonials__item',
+  slideActiveClass: 'testimonials__item--active',
+  slideNextClass: 'testimonials__item-next',
+  slidePrevClass: 'testimonials__item-prev',
+  slideDuplicatePrevClass: 'testimonials__item-duplicate-prev',
+  slideDuplicateNextClass: 'testimonials__item-duplicate-next',
+  loop: true,
+  pagination: {
+    el: '.testimonials__pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.testimonials__btn-next',
+    prevEl: '.testimonials__btn-prev',
+  },
+});
 
 // Modals And Forms
 
@@ -160,7 +178,7 @@ setDataFromeStorage(modalNameValue, 'modalName');
 // function getBodyScrollTop() {
 //   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
 //     document.body.scrollTop);
-// } 
+// }
 
 // function enableScroll() {
 //   if (existVerticalScroll()) {
