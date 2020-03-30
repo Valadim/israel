@@ -136,11 +136,6 @@ var toGoPhoneNumberMask = IMask(toGoPhoneNumber, maskOptions);
 var ctaPhoneNumberMask = IMask(ctaPhoneNumber, maskOptions);
 var modalPhoneNumberMask = IMask(modalPhoneNumber, maskOptions);
 
-// window.imaskJS(toGoPhoneNumber, {mask: '+{7}(000)000-00-00'});
-// window.imaskJS(ctaPhoneNumber, {mask: '+{7}(000)000-00-00'});
-// window.imaskJS(modalPhoneNumber, {mask: '+{7}(000)000-00-00'});
-
-
 function setDataFromeStorage(el, val) {
   if (localStorage.getItem(val) !== null) {
     el.value = localStorage.getItem(val);

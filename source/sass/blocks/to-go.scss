@@ -69,6 +69,8 @@
   padding: 18px 80px 18px 39px;
   border: 2px solid #e3e3e3;
   border-radius: 80px;
+  box-sizing: border-box;
+  outline: none;
 
   &::placeholder {
     font-weight: 500;
@@ -84,6 +86,7 @@
   position: relative;
   margin-left: -60px;
   padding: 20px 39px;
+  outline: none;
 
   &:hover,
   &:focus {
