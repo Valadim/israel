@@ -5,17 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
+  на русском) и возможность стажировки в Израиле.">
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font">
+  <link rel="preload" href="ralewayextrabold.woff2" as="font">
 </head>
 
 <body>
 
   <svg style="display: none;">
     <symbol id="play-btn" viewBox="0 0 96 96">
-      <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white" />
-      <circle class="circle2" cx="48" cy="48" r="32" fill="white" />
-      <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
+      <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white">
+        <circle class="circle2" cx="48" cy="48" r="32" fill="white">
+          <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
     </symbol>
     <symbol id="icon-facebook" viewBox="0 0 24 24">
       <g>
@@ -100,9 +109,9 @@
     <section class="about">
       <div class="about__wrapper">
         <h2 class="about__title">О программе</h2>
-        <p class="about__descr">
+        <p class="about__desc">
           «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
-          на русском) и возможность стажировки в Израиле. <br class="br-hide-mobile"> В течение освоения программ
+          на русском) и возможность стажировки в Израиле. В течение освоения программ
           предусмотрен грант от 4200 до
           8400$.
         </p>
@@ -116,17 +125,6 @@
             <circle class="circle2" cx="48" cy="48" r="32" fill="white" />
             <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC" />
           </svg>
-
-          <!-- <div class="icon-play">
-              <div class="circle1"></div>
-              <div class="circle2"></div>
-              <div class="triangle"></div>
-            </div> -->
-
-          <!-- <svg class="about__video-play-btn-icon" width="96" height="96">
-              <use xlink:href="#play-btn"></use>
-            </svg> -->
-
           <span class="visually-hidden">Включить презентацию о программе</span>
         </button>
       </div>
@@ -134,64 +132,64 @@
     </section>
     <!-- /.about -->
 
-    <section class="programms">
-      <div class="programms__wrapper">
-        <h2 class="programms__title">программы</h2>
+    <section class="programs">
+      <div class="programs__wrapper">
+        <h2 class="programs__title">программы</h2>
 
-        <div class="programms__tabs">
-          <div class="programms__tabs-btn-wrapper">
-            <button type="button" class="programms__tabs-btn programms__tabs-btn--comon"
+        <div class="programs__tabs">
+          <div class="programs__tabs-btn-wrapper">
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--comon"
               onclick="openProgramm(event, 'Сommon')" id="defaultOpen"><span>Общие</span></button>
-            <button type="button" class="programms__tabs-btn programms__tabs-btn--academ"
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--academ"
               onclick="openProgramm(event, 'Academ')">Академические</button>
-            <button type="button" class="programms__tabs-btn programms__tabs-btn--pract"
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--pract"
               onclick="openProgramm(event, 'Pract')">Стажировки</button>
-            <button type="button" class="programms__tabs-btn programms__tabs-btn--volunteer"
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--volunteer"
               onclick="openProgramm(event, 'Volunteer')">Волонтёрство</button>
-            <button type="button" class="programms__tabs-btn programms__tabs-btn--religion"
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--religion"
               onclick="openProgramm(event, 'Religion')">Религиозные</button>
           </div>
-          <div id="Сommon" class="programms__tabs-content">
-            <h3 class="programms__tabs-title">Общие</h3>
-            <p class="programms__tabs-descr">Провести семестр или год за рубежом, знакомясь с различными культурами и
+          <div id="Сommon" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Общие</h3>
+            <p class="programs__tabs-desc">Провести семестр или год за рубежом, знакомясь с различными культурами и
               идеями, традициями и стилем
               жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также
               академический центр, живая лаборатория идей и творческого исследования. </p>
-            <p class="programms__tabs-descr">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
+            <p class="programs__tabs-desc">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
               биологии, сравнительной
               религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
               изучить все это в удивительной университетской среде.</p>
           </div>
-          <div id="Academ" class="programms__tabs-content">
-            <h3 class="programms__tabs-title">Академические</h3>
-            <p class="programms__tabs-descr">Провести семестр или год за рубежом, знакомясь с различными культурами и
+          <div id="Academ" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Академические</h3>
+            <p class="programs__tabs-desc">Провести семестр или год за рубежом, знакомясь с различными культурами и
               идеями, традициями и стилем
               жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также
               академический центр, живая лаборатория идей и творческого исследования. </p>
-            <p class="programms__tabs-descr">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
+            <p class="programs__tabs-desc">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
               биологии, сравнительной
               религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
               изучить все это в удивительной университетской среде.</p>
           </div>
 
-          <div id="Pract" class="programms__tabs-content">
-            <h3 class="programms__tabs-title">Стажировки</h3>
-            <p class="programms__tabs-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          <div id="Pract" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Стажировки</h3>
+            <p class="programs__tabs-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
               temporibus animi maxime alias enim
               eveniet at qui illum soluta deleniti ducimus, quaerat doloremque, possimus, distinctio iusto quis veniam
               nam aperiam.</p>
           </div>
-          <div id="Volunteer" class="programms__tabs-content">
-            <h3 class="programms__tabs-title">Волонтёрство</h3>
-            <p class="programms__tabs-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут
+          <div id="Volunteer" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Волонтёрство</h3>
+            <p class="programs__tabs-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут
               рыбные тексты. Текста свой на
               берегу ipsum от всех оксмокс великий рот, большой снова, буквенных, заглавных пояс приставка ее
               маленькая.
               Грустный ручеек lorem послушавшись?</p>
           </div>
-          <div id="Religion" class="programms__tabs-content">
-            <h3 class="programms__tabs-title">Религиозные</h3>
-            <p class="programms__tabs-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
+          <div id="Religion" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Религиозные</h3>
+            <p class="programs__tabs-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
               eum
               eaque tempore, porro quos iste
               saepe odit? Nihil quo quos recusandae similique dolore soluta eius doloribus fugit voluptatibus
@@ -208,7 +206,7 @@
 
       <div class="to-go__wrapper">
         <h2 class="to-go__title">Хочу поехать!</h2>
-        <p class="to-go__descr">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+        <p class="to-go__desc">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
         </p>
 
         <form action="https://echo.htmlacademy.ru" method="post" class="to-go__form">
@@ -217,7 +215,7 @@
               <label class="visually-hidden" for="to-go__phone-number">Номер
                 телефона:</label>
               <input class="to-go__input-phone" id="to-go__phone-number" type="tel" name="Номер телефона:"
-                placeholder="телефон">
+                placeholder="телефон" required>
             </p>
             <button type="submit" class="to-go__btn-submit">перезвоните мне</button>
           </div>
@@ -231,9 +229,9 @@
       <div class="how-to-go__wrapper">
         <div class="how-to-go__inner-wrapper">
           <h2 class="how-to-go__title">Как поехать</h2>
-          <p class="how-to-go__descr">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
+          <p class="how-to-go__desc">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
             получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-          <p class="how-to-go__descr how-to-go__descr--bold">Чтобы иметь возможность получить грант на обучение от 4200
+          <p class="how-to-go__desc how-to-go__desc--bold">Чтобы иметь возможность получить грант на обучение от 4200
             до 8400$, вы
             должны:</p>
           <ul class="how-to-go__steps-list">
@@ -255,7 +253,7 @@
     <section class="live-in-israel">
       <div class="live-in-israel__wrapper">
         <h2 class="live-in-israel__title">Жизнь в израиле</h2>
-        <p class="live-in-israel__descr">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
+        <p class="live-in-israel__desc">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
           стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
 
         <div class="slider slider--live-list">
@@ -290,9 +288,9 @@
         <div class="masaisraerl__wrapper">
           <div class="masaisraerl__inner-wrapper">
             <p class="masaisraerl__title">#masaisrael</p>
-            <p class="masaisraerl__descr">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и
+            <p class="masaisraerl__desc">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и
               фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
-            <button class="masaisraerl__btn" type="button">смотреть фото</button>
+            <button type="button" class="masaisraerl__btn" type="button">смотреть фото</button>
           </div>
         </div>
       </div>
@@ -307,9 +305,9 @@
           <h2 class="faq__title">частые вопросы</h2>
           <ul class="faq__list">
             <li class="faq__item">
-              <button class="faq__accordion-btn">Кто организатор? Какие сроки у программы?</button>
+              <button type="button" class="faq__accordion-btn">Кто организатор? Какие сроки у программы?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
                   рыбные тексты. До ручеек вдали
                   рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
                   правилами грамматики? Использовало, однажды строчка.</p>
@@ -317,9 +315,9 @@
             </li>
 
             <li class="faq__item">
-              <button class="faq__accordion-btn">Что такое грант на обучение?</button>
+              <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
                   рыбные тексты. До ручеек вдали
                   рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
                   правилами грамматики? Использовало, однажды строчка.</p>
@@ -327,18 +325,18 @@
             </li>
 
             <li class="faq__item">
-              <button class="faq__accordion-btn">Как определяется стоимость программы?</button>
+              <button type="button" class="faq__accordion-btn">Как определяется стоимость программы?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Полная стоимость определяется организаторами в зависимости от
+                <p class="faq__accordion-desc">Полная стоимость определяется организаторами в зависимости от
                   направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому
                   предусматривается определённая доля личного участия.</p>
               </div>
             </li>
 
             <li class="faq__item">
-              <button class="faq__accordion-btn">Что такое грант на обучение?</button>
+              <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
                   рыбные тексты. До ручеек вдали
                   рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
                   правилами грамматики? Использовало, однажды строчка.</p>
@@ -346,9 +344,10 @@
             </li>
 
             <li class="faq__item">
-              <button class="faq__accordion-btn">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</button>
+              <button type="button" class="faq__accordion-btn">Признаётся ли учеба в рамках проекта для дальнейшего
+                обучения?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
                   рыбные тексты. До ручеек вдали
                   рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
                   правилами грамматики? Использовало, однажды строчка.</p>
@@ -356,9 +355,10 @@
             </li>
 
             <li class="faq__item">
-              <button class="faq__accordion-btn">Как выглдядит полный процесс регистрации на программу «Маса»?</button>
+              <button type="button" class="faq__accordion-btn">Как выглдядит полный процесс регистрации на программу
+                «Маса»?</button>
               <div class="faq__accordion-content">
-                <p class="faq__accordion-descr">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
                   рыбные тексты. До ручеек вдали
                   рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
                   правилами грамматики? Использовало, однажды строчка.</p>
@@ -407,11 +407,11 @@
 
           <div class="testimonials__controlls">
             <!-- Add Pagination -->
-            <div class="slider__testimonials-pagination">3/6</div>           <!-- Add Arrows -->
-            <button class="slider__testimonials-btn-prev">
+            <div class="slider__testimonials-pagination">3/6</div> <!-- Add Arrows -->
+            <button type="button" class="slider__testimonials-btn-prev">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider__testimonials-btn-next">
+            <button type="button" class="slider__testimonials-btn-next">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
@@ -511,7 +511,7 @@
 
               </div>
               <!--  /. Curator-info -->
-              <p class="contacts__descr">
+              <p class="contacts__desc">
                 Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с
                 куратором, узнайте подробнее о программах и выберите свою!
               </p>
@@ -528,33 +528,34 @@
     </section>
     <!-- /.contacts -->
 
-    <section class="cta">
+    <section class="call-to-action">
       <h2 class="visually-hidden">Заказать консультацию</h2>
-      <div class="cta__wrapper">
-        <div class="cta__inner-wrapper">
-          <p class="cta__title">
+      <div class="call-to-action__wrapper">
+        <div class="call-to-action__inner-wrapper">
+          <p class="call-to-action__title">
             Оставьте ваши контакты, если у вас
             остались вопросы — мы на них ответим!
           </p>
-          <p class="cta__descr">
+          <p class="call-to-action__desc">
             Мы не передаём данные третьим лицам. Ваши данные
             будут в безопасности и вам не придёт спам от нас!
           </p>
         </div>
 
-        <form action="https://echo.htmlacademy.ru" method="post" class="cta__form">
-          <div class="cta__fieldset">
-            <p class="cta__form-item">
-              <label class="visually-hidden" for="cta__name">Имя:</label>
-              <input class="cta__input-name" id="cta__name" type="text" name="Имя:" placeholder="Имя">
+        <form action="https://echo.htmlacademy.ru" method="post" class="call-to-action__form">
+          <div class="call-to-action__fieldset">
+            <p class="call-to-action__form-item">
+              <label class="visually-hidden" for="call-to-action__name">Имя:</label>
+              <input class="call-to-action__input-name" id="call-to-action__name" type="text" name="Имя:"
+                placeholder="Имя">
             </p>
-            <p class="cta__form-item">
-              <label class="visually-hidden" for="cta__phone-number">Номер
+            <p class="call-to-action__form-item">
+              <label class="visually-hidden" for="call-to-action__phone-number">Номер
                 телефона:</label>
-              <input class="cta__input-phone" id="cta__phone-number" type="tel" name="Номер телефона:"
-                placeholder="телефон">
+              <input class="call-to-action__input-phone" id="call-to-action__phone-number" type="tel"
+                name="Номер телефона:" placeholder="телефон" required>
             </p>
-            <button type="submit" class="cta__btn-submit">перезвоните мне</button>
+            <button type="submit" class="call-to-action__btn-submit">перезвоните мне</button>
           </div>
         </form>
       </div>
@@ -605,15 +606,12 @@
   <div class="modals modals--callback modals--hide">
     <div class="modals__wrapper">
 
-      <button class="modals__close-btn">
+      <button type="button" class="modals__close-btn">
         <span class="visually-hidden">Закрыть модальное окно</span>
-        <!-- <svg class="modals__close-btn-icon" width="18" height="17">
-          <use xlink:href="#icon-cross"></use>
-        </svg> -->
       </button>
 
       <p class="modals__title">Заказать звонок</p>
-      <p class="modals__descr">
+      <p class="modals__desc">
         Оставьте ваши контактные данные, мы свяжемся
         с вами в течение рабочего дня и обязательно
         поможем найти ответ на ваш вопрос!
@@ -627,7 +625,7 @@
           </p>
           <p class="modals__form-item">
             <input class="modals__input-phone" id="modals__phone-number" type="tel" name="Номер телефона:"
-              placeholder="Телефон">
+              placeholder="Телефон" required>
             <label class="visually-hidden" for="modals__phone-number">Номер
               телефона:</label>
           </p>
@@ -647,37 +645,24 @@
   <div class="modals modals--sent modals--hide">
     <div class="modals__wrapper modals__wrapper--sent">
 
-      <button class="modals__close-btn">
+      <button type="button" class="modals__close-btn">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
 
       <img src="img/icon-ok.svg" alt="Сообщение успешно отправленно" class="modals__img" width="66" height="64">
       <p class="modals__title">Заявка принята</p>
-      <p class="modals__descr modals__descr--sent">
+      <p class="modals__desc modals__desc--sent">
         Мы приняли ваши данные и вскоре мы
         перезвоним вам для уточнения деталей!
       </p>
-      <button class="modals__btn-submit modals__done-btn">Понятно</button>
+      <button type="button" class="modals__btn-submit modals__done-btn">Понятно</button>
     </div>
   </div>
 
 
   <script src="https://unpkg.com/imask"></script>
-
-
-
-  <!-- <script src="https://unpkg.com/imask"></script> -->
-  <!-- <script src="js/vendor/imask.js"></script> -->
   <script src="js/vendor/swiper/swiper.min.js"></script>
-
-
   <script src="js/script.js"></script>
-
-
-  <script>
-
-
-  </script>
 
 </body>
 

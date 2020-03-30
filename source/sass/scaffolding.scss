@@ -40,7 +40,8 @@
 
 @font-face {
   font-family: "Raleway";
-  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"),
+  src: local("Raleway ExtraBold"),
+    local("Raleway-ExtraBold"),
     url("../fonts/ralewayextrabold.woff2") format("woff2"),
     url("../fonts/ralewayextrabold.woff") format("woff");
   font-weight: 800;
@@ -61,8 +62,4 @@ body {
 img {
   width: 100%;
   height: auto;
-}
-
-* {
-  box-sizing: border-box;
 }

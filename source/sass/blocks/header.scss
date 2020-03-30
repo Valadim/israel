@@ -1,5 +1,6 @@
 .header {
   margin-bottom: -112px;
+  box-sizing: border-box;
 }
 
 .header__wrapper {
@@ -11,6 +12,7 @@
   width: 1170px;
   margin: 0 auto;
   padding: 25px 12px;
+  box-sizing: border-box;
 }
 
 .header__phone {
@@ -19,7 +21,7 @@
   line-height: 18px;
   color: $black;
   text-decoration: none;
-  transition: color ease .3s;
+  transition: color ease 0.3s;
   margin-top: 23px;
 
   &:hover,
@@ -33,18 +35,18 @@
 }
 
 .header__callback {
-  margin: 23px 5px 0px 0;
+  margin: 23px 5px 0 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
 
-    letter-spacing: -0.2px;
+  letter-spacing: -0.2px;
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 1px dashed $black;
-  transition: color ease .3s,
-    border-bottom ease .3s;
+  transition: color ease 0.3s,
+    border-bottom ease 0.3s;
 
   &:hover,
   &:focus {
@@ -58,101 +60,15 @@
   height: 48px;
 }
 
-.header__title {
-  align-self: center;
-  max-width: 700px;
-  margin-top: 600px;
-  margin-bottom: 80px;
-  font-size: 48px;
-  line-height: 54px;
-  font-weight: bold;
-  color: $white;
-  text-align: center;
-}
-
-.header__title {
-  max-width: 345px;
-  margin-top: 458px;
-  margin-bottom: 32px;
-  font-size: 24px;
-  line-height: 29px;
-}
-
-.header__btn {
-  position: relative;
-  align-self: center;
-  width: 54px;
-  height: 54px;
-  padding: 0;
-  margin: 0 0 100px 0;
-  text-align: center;
-  vertical-align: middle;
-  background: none;
-  border: none;
-  border-radius: 70px;
-  cursor: pointer;
-  border: 1px solid $white;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: -14px;
-    left: -14px;
-    width: 78px;
-    height: 78px;
-    border-radius: 80px;
-    border: 1px dashed $white;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 65px;
-    left: 26px;
-    width: 1px;
-    height: 55px;
-    background-color: $white;
-  }
-}
-
-.header__btn-icon {
-  width: 17px;
-  height: 26px;
-}
-
-// @media (max-width: 1366px) {
-//   .header {
-//     background-position: center top;
-//   }
-
-//   .header__title {
-//     max-width: 345px;
-//     margin-top: 458px;
-//     margin-bottom: 32px;
-//     font-size: 24px;
-//     line-height: 29px;
-//   }
-// }
-
 @media (max-width: 1200px) {
   .header__wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
-
-  .header__title {
-    max-width: 345px;
-    margin-top: 358px;
-    margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 29px;
-  }
 }
 
-
 @media (max-width: $mobile) {
-
   .header {
     margin-bottom: -50px;
   }
@@ -180,7 +96,7 @@
     text-align: right;
     font-size: 14px;
     line-height: 17px;
-    margin: 10px -2px 0px 0;
+    margin: 10px -2px 0 0;
   }
 
   .header__callback {
@@ -188,11 +104,5 @@
     font-size: 13px;
     line-height: 17px;
     margin: -24px 0 0 auto;
-  }
-
-  .header__title {
-    max-width: 300px;
-    font-size: 20px;
-    line-height: 24px;
   }
 }

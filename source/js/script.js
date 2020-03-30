@@ -5,16 +5,16 @@ function openProgramm(evt, progName) {
   var i;
   var tabcontent;
   var tablinks;
-  tabcontent = document.querySelectorAll('.programms__tabs-content');
+  tabcontent = document.querySelectorAll('.programs__tabs-content');
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = 'none';
   }
-  tablinks = document.querySelectorAll('.programms__tabs-btn');
+  tablinks = document.querySelectorAll('.programs__tabs-btn');
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(' programms__tabs-btn--active', '');
+    tablinks[i].className = tablinks[i].className.replace(' programs__tabs-btn--active', '');
   }
   document.getElementById(progName).style.display = 'block';
-  evt.currentTarget.className += ' programms__tabs-btn--active';
+  evt.currentTarget.className += ' programs__tabs-btn--active';
 }
 
 document.getElementById('defaultOpen').click();
@@ -104,26 +104,26 @@ for (i = 0; i < accordion.length; i++) {
 
 
 
-var swiper = new Swiper('.slider--testimonials', {
-  spaceBetween: 0,
-  slidesPerView: 1,
-  wrapperClass: 'slider__testimonials-list',
-  slideClass: 'slider__testimonials-item',
-  slideActiveClass: 'slider__testimonials-item--active',
-  slideNextClass: 'slider__testimonials-next',
-  slidePrevClass: 'slider__testimonials-prev',
-  slideDuplicatePrevClass: 'slider__testimonials-duplicate-prev',
-  slideDuplicateNextClass: 'slider__testimonials-duplicate-next',
-  loop: true,
-  pagination: {
-    el: '.slider__testimonials-pagination',
-    type: 'fraction',
-  },
-  navigation: {
-    nextEl: '.slider__testimonials-btn-next',
-    prevEl: '.slider__testimonials-btn-prev',
-  },
-});
+// var swiper = new Swiper('.slider--testimonials', {
+//   spaceBetween: 0,
+//   slidesPerView: 1,
+//   wrapperClass: 'slider__testimonials-list',
+//   slideClass: 'slider__testimonials-item',
+//   slideActiveClass: 'slider__testimonials-item--active',
+//   slideNextClass: 'slider__testimonials-next',
+//   slidePrevClass: 'slider__testimonials-prev',
+//   slideDuplicatePrevClass: 'slider__testimonials-duplicate-prev',
+//   slideDuplicateNextClass: 'slider__testimonials-duplicate-next',
+//   loop: true,
+//   pagination: {
+//     el: '.slider__testimonials-pagination',
+//     type: 'fraction',
+//   },
+//   navigation: {
+//     nextEl: '.slider__testimonials-btn-next',
+//     prevEl: '.slider__testimonials-btn-prev',
+//   },
+// });
 
 
 /* Modals */
@@ -211,9 +211,9 @@ var body = document.querySelector('body');
 var toGoPhoneNumber = document.querySelector('#to-go__phone-number');
 var toGoBtnSubmit = document.querySelector('.to-go__btn-submit');
 
-var ctaPhoneNumber = document.querySelector('#cta__phone-number');
-var ctaNameValue = document.querySelector('#cta__name');
-var ctaBtnSubmit = document.querySelector('.cta__btn-submit');
+var ctaPhoneNumber = document.querySelector('#call-to-action__phone-number');
+var ctaNameValue = document.querySelector('#call-to-action__name');
+var ctaBtnSubmit = document.querySelector('.call-to-action__btn-submit');
 
 var modalPhoneNumber = document.querySelector('#modals__phone-number');
 var modalNameValue = document.querySelector('#modals__name');

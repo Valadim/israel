@@ -1,9 +1,9 @@
 .contacts {
   padding: 65px 0 0;
   margin-bottom: -60px;
-  background: url("../../img/contacts-bg.jpg") center no-repeat;
+  background: url("../img/contacts-bg.jpg") center no-repeat;
   background-size: cover;
-
+  box-sizing: border-box;
 }
 
 .contacts__wrapper {
@@ -11,6 +11,7 @@
   width: 1176px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .contacts__title {
@@ -21,6 +22,7 @@
 
 .contacts__inner-wrapper {
   display: flex;
+  box-sizing: border-box;
 }
 
 .contacts__data {
@@ -49,7 +51,7 @@
     left: 0;
     width: 15px;
     height: 15px;
-    background: url("../../img/icon-marker.png") left center no-repeat;
+    background: url("../img/icon-marker.png") left center no-repeat;
   }
 }
 
@@ -57,7 +59,6 @@
   position: relative;
   margin: 0;
   padding: 0 20px 0 0;
-  font-weight: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 150%;
@@ -72,12 +73,13 @@
     right: 0;
     width: 15px;
     height: 15px;
-    background: url("../../img/icon-gps.png") right center no-repeat;
+    background: url("../img/icon-gps.png") right center no-repeat;
   }
 }
 
 .contacts__curator-wrapper {
   display: flex;
+  box-sizing: border-box;
 }
 
 .contacts__curator-img {
@@ -88,6 +90,7 @@
 
 .contacts__curator-info {
   margin-left: 24px;
+  box-sizing: border-box;
 }
 
 .contacts__curator-name {
@@ -113,7 +116,7 @@
   opacity: 0.74;
 }
 
-.contacts__descr {
+.contacts__desc {
   max-width: 490px;
   margin-top: 27px;
   font-size: 17px;
@@ -128,10 +131,8 @@
   height: 448px;
   top: -92px;
   right: -75px;
-  background: url("../../img/map-bg.png") center no-repeat;
+  background: url("../img/map-bg.png") center no-repeat;
 }
-
-
 
 @media (max-width: 1200px) {
   .contacts__wrapper {
@@ -158,13 +159,11 @@
   }
 }
 
-
 @media (max-width: $mobile) {
-
   .contacts {
     margin-top: 14px;
     margin-bottom: -60px;
-    background: url("../../img/contacts-bg.jpg") center no-repeat;
+    background: url("../img/contacts-bg.jpg") center no-repeat;
   }
 
   .contacts__wrapper {
@@ -194,7 +193,7 @@
     margin-left: 0;
   }
 
-  .contacts__descr {
+  .desc {
     font-size: 16px;
     line-height: 160%;
     opacity: 0.87;

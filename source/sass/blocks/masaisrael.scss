@@ -1,31 +1,33 @@
 .masaisraerl {
   margin-top: 150px;
   padding: 100px 0 200px;
-  background: url("../../img/masaisrael-bg.jpg") center bottom no-repeat;
+  background: url("../img/masaisrael-bg.jpg") center bottom no-repeat;
   background-size: cover;
   background-position: 4px -7px;
+  box-sizing: border-box;
 }
 
 .masaisraerl__wrapper {
   width: 1056px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .masaisraerl__inner-wrapper {
   width: 400px;
   margin-left: auto;
+  box-sizing: border-box;
 }
 
 .masaisraerl__title {
   @include title;
   text-align: left;
-
   margin-top: 13px;
   margin-bottom: 26px;
 }
 
-.masaisraerl__descr {
+.masaisraerl__desc {
   margin-top: 18px;
   margin-bottom: 49px;
   padding-left: 3px;
@@ -34,7 +36,7 @@
   letter-spacing: 0.1px;
   color: $white;
   opacity: 0.87;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .masaisraerl__btn {
@@ -50,29 +52,28 @@
     left: 42px;
     width: 20px;
     height: 20px;
-    background: url("../../img/icon-instagram.svg") center no-repeat;
+    background: url("../img/icon-instagram.svg") center no-repeat;
   }
 
   &:hover,
   &:focus {
     @include btn-hover;
 
-    padding-left: 60px;
+    padding: 20px 40px 19px 72px;
   }
 
   &:active {
     @include btn-active;
 
-    padding-left: 60px;
+    padding: 20px 40px 19px 72px;
   }
 }
 
 @media (max-width: 1200px) {
   .masaisraerl {
-    background-image: url("../../img/masaisrael-bg-mobile.jpg");
+    background-image: url("../img/masaisrael-bg-mobile.jpg");
     background-position: center bottom;
     background-size: cover;
-    padding-bottom: 50px;
     margin-top: 50px;
     padding: 50px 0;
   }
@@ -99,17 +100,15 @@
     line-height: 29px;
   }
 
-  .masaisraerl__descr {
+  .masaisraerl__desc {
     font-size: 16px;
     line-height: 160%;
   }
 }
 
-
 @media (max-width: $mobile) {
-
   .masaisraerl {
-    background-image: url("../../img/masaisrael-bg-mobile.jpg");
+    background-image: url("../img/masaisrael-bg-mobile.jpg");
     background-position: center bottom;
     background-size: cover;
     padding-bottom: 0;
@@ -131,7 +130,7 @@
     line-height: 49px;
   }
 
-  .masaisraerl__descr {
+  .masaisraerl__desc {
     padding: 80px 0 11px 8px;
   }
 

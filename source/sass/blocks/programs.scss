@@ -1,6 +1,8 @@
-.programms {}
+.programs {
+  box-sizing: border-box;
+}
 
-.programms__wrapper {
+.programs__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@
   width: 977px;
   margin: 0 auto;
   padding: 110px 15px 20px;
-
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -18,7 +20,7 @@
     right: -194px;
     width: 680px;
     height: 426px;
-    background-image: url("../../img/sketch_Bg.jpg");
+    background-image: url("../img/sketch_Bg.jpg");
     // background-position: 491px 72px;
     background-size: auto;
     background-repeat: no-repeat;
@@ -26,32 +28,30 @@
   }
 }
 
-.programms__title {
+.programs__title {
   @include title;
 
   margin-top: 10px;
   margin-bottom: 34px;
 }
 
-.programms__tabs {
+.programs__tabs {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.programms__tabs-btn-wrapper {
+.programs__tabs-btn-wrapper {
   width: 230px;
   margin-top: 30px;
   margin-right: 12px;
+  box-sizing: border-box;
 }
 
-.programms__tabs-content {
-  width: 600px;
-}
-
-.programms__tabs-btn {
+.programs__tabs-btn {
   position: relative;
   display: block;
-  background: transparent url(../../img/icon-star-b.png) 20px center no-repeat;
+  background: transparent url("../img/icon-star-b.png") 20px center no-repeat;
   color: rgba($color: $black, $alpha: 0.87);
   margin-bottom: 5px;
   padding: 24px 41px 25px 72px;
@@ -63,30 +63,30 @@
   font-size: 16px;
   line-height: 19px;
   opacity: 0.87;
-  transition: background-image ease .3s,
-    color ease .3s;
+  transition: background-image ease 0.3s,
+    color ease 0.3s;
 
   &--academ {
-    background: url(../../img/icon-hat-b.png) 20px center no-repeat;
+    background: url("../img/icon-hat-b.png") 20px center no-repeat;
   }
 
   &--pract {
-    background: url(../../img/icon-case-b.png) 20px center no-repeat;
+    background: url("../img/icon-case-b.png") 20px center no-repeat;
   }
 
   &--volunteer {
-    background: url(../../img/icon-volunteer-b.png) 20px center no-repeat;
+    background: url("../img/icon-volunteer-b.png") 20px center no-repeat;
   }
 
   &--religion {
-    background: url(../../img/icon-religion-b.png) 26px center no-repeat;
+    background: url("../img/icon-religion-b.png") 26px center no-repeat;
   }
 }
 
-.programms__tabs-title {
+.programs__tabs-title {
   margin-top: 49px;
   margin-bottom: 25px;
-  font-family: Montserrat;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -95,44 +95,44 @@
   color: $blue;
 }
 
-.programms__tabs-descr {
+.programs__tabs-desc {
   font-size: 15px;
   line-height: 26px;
   color: $black;
 }
 
-.programms__tabs-btn:hover,
-.programms__tabs-btn:focus {
+.programs__tabs-btn:hover,
+.programs__tabs-btn:focus {
   color: $yellow;
   outline: none;
 }
 
-.programms__tabs-btn--comon:hover,
-.programms__tabs-btn--comon:focus {
-  background: transparent url(../../img/icon-star-g.png) 20px center no-repeat;
+.programs__tabs-btn--comon:hover,
+.programs__tabs-btn--comon:focus {
+  background: transparent url("../img/icon-star-g.png") 20px center no-repeat;
 }
 
-.programms__tabs-btn--academ:hover,
-.programms__tabs-btn--academ:focus {
-  background: url(../../img/icon-hat-g.png) 20px center no-repeat;
+.programs__tabs-btn--academ:hover,
+.programs__tabs-btn--academ:focus {
+  background: url("../img/icon-hat-g.png") 20px center no-repeat;
 }
 
-.programms__tabs-btn--pract:hover,
-.programms__tabs-btn--pract:focus {
-  background: url(../../img/icon-case-g.png) 20px center no-repeat;
+.programs__tabs-btn--pract:hover,
+.programs__tabs-btn--pract:focus {
+  background: url("../img/icon-case-g.png") 20px center no-repeat;
 }
 
-.programms__tabs-btn--volunteer:hover,
-.programms__tabs-btn--volunteer:focus {
-  background: url(../../img/icon-volunteer-g.png) 20px center no-repeat;
+.programs__tabs-btn--volunteer:hover,
+.programs__tabs-btn--volunteer:focus {
+  background: url("../img/icon-volunteer-g.png") 20px center no-repeat;
 }
 
-.programms__tabs-btn--religion:hover,
-.programms__tabs-btn--religion:focus {
-  background: url(../../img/icon-religion-g.png) 26px center no-repeat;
+.programs__tabs-btn--religion:hover,
+.programs__tabs-btn--religion:focus {
+  background: url("../img/icon-religion-g.png") 26px center no-repeat;
 }
 
-.programms__tabs-btn.programms__tabs-btn--active {
+.programs__tabs-btn.programs__tabs-btn--active {
   color: $white;
   overflow: hidden;
 
@@ -159,47 +159,47 @@
   }
 }
 
-.programms__tabs-btn--comon.programms__tabs-btn--active {
+.programs__tabs-btn--comon.programs__tabs-btn--active {
   color: $white;
-  background: url(../../img/icon-star-w.png) 20px center no-repeat,
+  background: url("../img/icon-star-w.png") 20px center no-repeat,
     $gradient;
 }
 
-.programms__tabs-btn--academ.programms__tabs-btn--active {
+.programs__tabs-btn--academ.programs__tabs-btn--active {
   color: $white;
-  background: url(../../img/icon-hat-w.png) 20px center no-repeat,
+  background: url("../img/icon-hat-w.png") 20px center no-repeat,
     $gradient;
 }
 
-.programms__tabs-btn--pract.programms__tabs-btn--active {
+.programs__tabs-btn--pract.programs__tabs-btn--active {
   color: $white;
-  background: url(../../img/icon-case-w.png) 20px center no-repeat,
+  background: url("../img/icon-case-w.png") 20px center no-repeat,
     $gradient;
 }
 
-.programms__tabs-btn--volunteer.programms__tabs-btn--active {
+.programs__tabs-btn--volunteer.programs__tabs-btn--active {
   color: $white;
-  background: url(../../img/icon-volunteer-w.png) 20px center no-repeat,
+  background: url("../img/icon-volunteer-w.png") 20px center no-repeat,
     $gradient;
 }
 
-.programms__tabs-btn--religion.programms__tabs-btn--active {
+.programs__tabs-btn--religion.programs__tabs-btn--active {
   color: $white;
-  background: url(../../img/icon-religion-w.png) 26px center no-repeat,
+  background: url("../img/icon-religion-w.png") 26px center no-repeat,
     $gradient;
 }
 
-.programms__tabs-content {
+.programs__tabs-content {
+  width: 600px;
   margin-left: 50px;
   font-size: 15px;
   line-height: 170%;
+  box-sizing: border-box;
   color: rgba($color: $black, $alpha: 0.87);
 }
 
-@media (max-width: 1366px) {}
-
 @media (max-width: 1200px) {
-  .programms__wrapper {
+  .programs__wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -207,7 +207,7 @@
 }
 
 @media (max-width: $mobile) {
-  .programms__wrapper {
+  .programs__wrapper {
     margin: 0 auto;
     padding: 0 15px;
 
@@ -218,7 +218,7 @@
       right: -24px;
       width: 320px;
       height: 201px;
-      background-image: url("../../img/sketch_Bg.jpg");
+      background-image: url("../img/sketch_Bg.jpg");
       // background-position: 491px 72px;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -226,7 +226,7 @@
     }
   }
 
-  .programms__title {
+  .programs__title {
     @include title-mobile;
 
     display: inline-block;
@@ -234,10 +234,9 @@
     margin-bottom: 16px;
     text-align: center;
     align-self: center;
-
   }
 
-  .programms__descr {
+  .programs__desc {
     font-size: 16px;
     line-height: 160%;
   }
@@ -246,11 +245,11 @@
     display: none;
   }
 
-  .programms__tabs {
+  .programs__tabs {
     flex-direction: column;
   }
 
-  .programms__tabs-btn-wrapper {
+  .programs__tabs-btn-wrapper {
     margin: 0;
     padding: 0;
     display: flex;
@@ -258,19 +257,12 @@
     overflow-x: scroll;
   }
 
-  .programms__tabs-content {
+  .programs__tabs-content {
     width: 100%;
     margin: 0;
   }
 
-  // .programms__tabs-btn {
-  //   padding: 15px 11px 14px 51px;
-  //   overflow: visible;
-  //   opacity: 0.4;
-  // }
-
-
-  .programms__tabs-btn.programms__tabs-btn--active {
+  .programs__tabs-btn.programs__tabs-btn--active {
     color: $white;
     overflow: visible;
     border-radius: 50px;
@@ -282,7 +274,7 @@
     }
   }
 
-  .programms__tabs-btn {
+  .programs__tabs-btn {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     padding: 15px 11px 14px 51px;
@@ -290,52 +282,42 @@
     opacity: 0.4;
   }
 
-  .programms__tabs-btn--comon:hover,
-  .programms__tabs-btn--comon:focus {
+  .programs__tabs-btn--comon:hover,
+  .programs__tabs-btn--comon:focus {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     opacity: 1;
   }
 
-  .programms__tabs-btn--academ:hover,
-  .programms__tabs-btn--academ:focus {
+  .programs__tabs-btn--academ:hover,
+  .programs__tabs-btn--academ:focus {
     background-size: 35px, 100%;
     background-position: 12px center, 0 0;
     opacity: 1;
   }
 
-  .programms__tabs-btn--pract:hover,
-  .programms__tabs-btn--pract:focus {
+  .programs__tabs-btn--pract:hover,
+  .programs__tabs-btn--pract:focus {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     opacity: 1;
   }
 
-  .programms__tabs-btn--volunteer:hover,
-  .programms__tabs-btn--volunteer:focus {
+  .programs__tabs-btn--volunteer:hover,
+  .programs__tabs-btn--volunteer:focus {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     opacity: 1;
   }
 
-  .programms__tabs-btn--religion:hover,
-  .programms__tabs-btn--religion:focus {
+  .programs__tabs-btn--religion:hover,
+  .programs__tabs-btn--religion:focus {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     opacity: 1;
   }
 
-  .programms__tabs-btn--comon.programms__tabs-btn--active {
-    background-size: 32px, 100%;
-    background-position: 12px center, 0 0;
-    padding: 15px 12px 14px 51px;
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .programms__tabs-btn--academ.programms__tabs-btn--active {
+  .programs__tabs-btn--comon.programs__tabs-btn--active {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     padding: 15px 12px 14px 51px;
@@ -345,7 +327,7 @@
     opacity: 1;
   }
 
-  .programms__tabs-btn--pract.programms__tabs-btn--active {
+  .programs__tabs-btn--academ.programs__tabs-btn--active {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     padding: 15px 12px 14px 51px;
@@ -355,7 +337,7 @@
     opacity: 1;
   }
 
-  .programms__tabs-btn--volunteer.programms__tabs-btn--active {
+  .programs__tabs-btn--pract.programs__tabs-btn--active {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     padding: 15px 12px 14px 51px;
@@ -365,7 +347,7 @@
     opacity: 1;
   }
 
-  .programms__tabs-btn--religion.programms__tabs-btn--active {
+  .programs__tabs-btn--volunteer.programs__tabs-btn--active {
     background-size: 32px, 100%;
     background-position: 12px center, 0 0;
     padding: 15px 12px 14px 51px;
@@ -375,14 +357,24 @@
     opacity: 1;
   }
 
-  .programms__tabs-title {
+  .programs__tabs-btn--religion.programs__tabs-btn--active {
+    background-size: 32px, 100%;
+    background-position: 12px center, 0 0;
+    padding: 15px 12px 14px 51px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  .programs__tabs-title {
     margin-top: 27px;
     margin-bottom: 15px;
     font-size: 24px;
     line-height: 29px;
   }
 
-  .programms__tabs-descr {
+  .programs__tabs-desc {
     font-size: 14px;
     line-height: 160%;
     color: #484848;
@@ -390,5 +382,4 @@
     margin-top: 10px;
     opacity: 0.87;
   }
-
 }

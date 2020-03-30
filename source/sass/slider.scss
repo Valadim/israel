@@ -54,7 +54,7 @@
 }
 
 .slider__testimonials-pagination {
-  font-family: Fira Sans;
+  font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -73,14 +73,14 @@
 }
 
 .slider__testimonials-btn-prev {
-  background: url("../../img/icon-arrow-left.svg") center no-repeat;
+  background: url("../img/icon-arrow-left.svg") center no-repeat;
   margin-top: -2px;
   margin-right: 0;
   margin-left: 16px;
 }
 
 .slider__testimonials-btn-next {
-  background: url("../../img/icon-arrow-right.svg") center no-repeat;
+  background: url("../img/icon-arrow-right.svg") center no-repeat;
   margin-top: -2px;
   margin-left: 4px;
   margin-right: auto;
@@ -118,7 +118,6 @@
 }
 
 @media (max-width: 1200px) {
-
   .slider__list,
   .slider__testimonials-list {
     position: relative;

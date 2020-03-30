@@ -2,11 +2,9 @@
   position: relative;
   margin: 0 0;
   padding: 50px 0 110px;
-
-  background: url("../../img/faq-bg.jpg") center top no-repeat;
+  background: url("../img/faq-bg.jpg") center top no-repeat;
   background-size: cover;
-  // z-index: -7;
-
+  box-sizing: border-box;
 }
 
 .faq__wrapper {
@@ -14,6 +12,7 @@
   width: 1176px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -22,43 +21,30 @@
     left: -136px;
     width: 194px;
     height: 177px;
-    background: url("../../img/bag-bg.png") left bottom no-repeat;
-    // z-index: -1;
+    background: url("../img/bag-bg.png") left bottom no-repeat;
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: -75px;
-  //   right: -99px;
-  //   width: 1366px;
-  //   height: 1119px;
-  //   background: url("../../img/faq-bg.jpg") center top no-repeat;
-  //   background-size: auto;
-  //   z-index: -7;
-  // }
 }
 
 .faq__inner-wrapper {
   position: relative;
   width: 530px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     right: -726px;
     width: 645px;
     height: 803px;
-    background: url("../../img/faq-photo.png") right center no-repeat;
-    // z-index: 0;
+    background: url("../img/faq-photo.png") right center no-repeat;
   }
 }
 
 .faq__title {
   @include title;
-  text-align: left;
 
+  text-align: left;
   margin-top: 35px;
   margin-bottom: 27px;
 }
@@ -66,6 +52,7 @@
 .faq__list {
   @include list-reset;
 
+  box-sizing: border-box;
   counter-reset: faqlist;
 }
 
@@ -74,6 +61,7 @@
   margin: 20px 0 19px;
   padding: 0 0 11px;
   border-bottom: 1px solid rgba($black, 0.2);
+  box-sizing: border-box;
 
   &::before {
     position: absolute;
@@ -100,6 +88,7 @@
   background: none;
   border: none;
   transition: 0.3s;
+  box-sizing: border-box;
   cursor: pointer;
 
 
@@ -110,16 +99,15 @@
     right: 5px;
     width: 20px;
     height: 20px;
-    background: url("../../img/icon-chevron.svg") center no-repeat;
-    transition: transform ease .3s
+    background: url("../img/icon-chevron.svg") center no-repeat;
+    transition: transform ease 0.3s;
   }
 }
 
 .faq__accordion-content--active::before {
   transform: rotateX(180deg);
-  transition: transform ease .3s;
+  transition: transform ease 0.3s;
 }
-
 
 .faq__accordion-btn:hover,
 .faq__accordion-btn:focus {
@@ -130,14 +118,15 @@
 .faq__accordion-content {
   padding: 0 2px;
   max-height: 0;
+  box-sizing: border-box;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-.faq__accordion-descr {
+.faq__accordion-desc {
   margin-top: 5px;
   margin-bottom: 21px;
-  font-family: Fira Sans;
+  font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -147,7 +136,6 @@
 
 
 @media (max-width: 1200px) {
-
   .faq {
     margin-top: 90px;
   }
@@ -208,12 +196,12 @@
       right: -1px;
       width: 20px;
       height: 20px;
-      background: url("../../img/icon-chevron.svg") center no-repeat;
-      transition: transform ease .3s
+      background: url("../img/icon-chevron.svg") center no-repeat;
+      transition: transform ease 0.3s;
     }
   }
 
-  .faq__accordion-descr {
+  .faq__accordion-desc {
     font-weight: normal;
     font-size: 14px;
     line-height: 160%;
@@ -224,9 +212,6 @@
 
 
 @media (max-width: $mobile) {
-
-
-
   .faq__wrapper {
     width: 100%;
     margin: 0 auto;

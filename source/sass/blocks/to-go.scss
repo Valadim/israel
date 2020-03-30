@@ -1,5 +1,6 @@
 .to-go {
   padding: 100px 0;
+  box-sizing: border-box;
 }
 
 .to-go__wrapper {
@@ -7,6 +8,7 @@
   width: 978px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -15,7 +17,7 @@
     right: -194px;
     width: 818px;
     height: 594px;
-    background: url("../../img/girl-flag-bg.jpg") center no-repeat;
+    background: url("../img/girl-flag-bg.jpg") center no-repeat;
     z-index: -1;
   }
 
@@ -26,7 +28,7 @@
     left: -267px;
     width: 220px;
     height: 262px;
-    background: url("../../img/backpack.jpg") center no-repeat;
+    background: url("../img/backpack.jpg") center no-repeat;
     z-index: -1;
   }
 }
@@ -38,12 +40,9 @@
   text-align: left;
 }
 
-.to-go__descr {
+.to-go__desc {
   max-width: 400px;
   margin-bottom: 64px;
-  font-family: Fira Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   line-height: 170%;
   color: $black;
@@ -56,6 +55,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
 }
 
 .to-go__form-item {
@@ -67,7 +67,7 @@
 .to-go__input-phone {
   width: 322px;
   padding: 18px 80px 18px 39px;
-  border: 2px solid #E3E3E3;
+  border: 2px solid #e3e3e3;
   border-radius: 80px;
 
   &::placeholder {
@@ -76,7 +76,6 @@
     line-height: 20px;
     color: $black;
     opacity: 0.5;
-    ;
   }
 }
 
@@ -117,9 +116,8 @@
 }
 
 @media (max-width: $mobile) {
-
   .to-go {
-    padding: 40px 0
+    padding: 40px 0;
   }
 
   .to-go__wrapper {
@@ -134,7 +132,7 @@
       right: -52px;
       width: 424px;
       height: 308px;
-      background: url("../../img/girl-flag-bg.jpg") center no-repeat;
+      background: url("../img/girl-flag-bg.jpg") center no-repeat;
       background-size: 100% 100%;
       z-index: -1;
     }
@@ -146,14 +144,14 @@
       left: -54px;
       width: 158px;
       height: 188px;
-      background: url("../../img/backpack.jpg") center no-repeat;
+      background: url("../img/backpack.jpg") center no-repeat;
       background-size: 100%;
       z-index: -1;
     }
   }
 
   .to-go__title {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -166,7 +164,7 @@
     margin-bottom: 24px;
   }
 
-  .to-go__descr {
+  .to-go__desc {
     max-width: 400px;
     margin-bottom: 18px;
   }
@@ -174,7 +172,7 @@
   .to-go__fieldset {
     display: flex;
     flex-direction: column;
-
+    box-sizing: border-box;
   }
 
   .to-go__input-phone {
