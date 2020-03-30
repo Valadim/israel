@@ -692,14 +692,14 @@ window.swiper = Swiper;
     var engineUserAgent = getBuiltIn('navigator', 'userAgent') || '';
 
     // https://github.com/zloirock/core-js/issues/280
-     // eslint-disable-next-line unicorn/no-unsafe-regex
+    // eslint-disable-next-line unicorn/no-unsafe-regex
 
 
     var stringPadWebkitBug = /Version\/10\.\d+(\.\d+)?( Mobile\/\w+)? Safari\//.test(engineUserAgent);
 
     var $padEnd = stringPad.end;
 
-     // `String.prototype.padEnd` method
+    // `String.prototype.padEnd` method
     // https://tc39.github.io/ecma262/#sec-string.prototype.padend
 
 
@@ -717,7 +717,7 @@ window.swiper = Swiper;
 
     var $padStart = stringPad.start;
 
-     // `String.prototype.padStart` method
+    // `String.prototype.padStart` method
     // https://tc39.github.io/ecma262/#sec-string.prototype.padstart
 
 

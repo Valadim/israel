@@ -36,11 +36,15 @@
 
 .live-in-israel__desc {
   max-width: 720px;
-  margin: 0 auto -20px;
+  margin: 0 auto 20px;
   font-size: 17px;
   line-height: 170%;
   color: rgba($color: $black, $alpha: 0.87);
   text-align: center;
+
+  &:last-of-type {
+    margin-bottom: -20px;
+  }
 }
 
 .live-in-israel__programms-title {

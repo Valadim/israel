@@ -51,11 +51,14 @@
   box-sizing: border-box;
 }
 
-.call-to-action__input-name,
-.call-to-action__input-phone {
+.call-to-action__form-item input {
   width: 250px;
   margin-right: 24px;
   padding: 20px 80px 20px 40px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba($color: $black, $alpha: 0.87);
   border: 2px solid #e3e3e3;
   border-radius: 80px;
   box-sizing: border-box;
@@ -66,8 +69,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
-    color: $black;
-    opacity: 0.5;
+    color: rgba($color: $black, $alpha: 0.5);
   }
 }
 
@@ -82,7 +84,7 @@
   @include btn;
 
   outline: none;
-  
+
   &:hover,
   &:focus {
     @include btn-hover;

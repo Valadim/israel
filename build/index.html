@@ -22,10 +22,10 @@
 
   <svg style="display: none;">
     <symbol id="play-btn" viewBox="0 0 96 96">
-      <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white">
-        <circle class="circle2" cx="48" cy="48" r="32" fill="white">
-          <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1fc0fc"></path>
-    </circle></circle></symbol>
+      <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
+      <circle class="circle2" cx="48" cy="48" r="32" fill="white"></circle>
+      <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1fc0fc"></path>
+    </symbol>
     <symbol id="icon-facebook" viewBox="0 0 24 24">
       <g>
         <path d="M15.5378 5.18705H17.4V1.94345C17.0787 1.89925 15.9738 1.7998 14.687 1.7998C12.0021 1.7998 10.1629 3.48875 10.1629 6.59296V9.44981H7.2V13.0759H10.1629V22.1998H13.7955V13.0768H16.6385L17.0898 9.45066H13.7946V6.95251C13.7955 5.90445 14.0776 5.18705 15.5378 5.18705Z" fill="currentColor"></path>
@@ -192,7 +192,7 @@
             <p class="to-go__form-item">
               <label class="visually-hidden" for="to-go__phone-number">Номер
                 телефона:</label>
-              <input class="to-go__input-phone" id="to-go__phone-number" type="tel" name="Номер телефона:" placeholder="телефон" required="">
+              <input class="to-go__input-phone" id="to-go__phone-number" type="tel" name="Номер телефона" placeholder="телефон" required="">
             </p>
             <button type="submit" class="to-go__btn-submit">перезвоните мне</button>
           </div>
@@ -353,75 +353,81 @@
 
       <div class="testimonials__wrapper">
         <h2 class="testimonials__title">Отзывы</h2>
-        <div class="testimonials__wrapper 1slider 1slider--testimonials">
+        <blockquote class="testimonials__wrapper 1slider 1slider--testimonials">
 
 
 
           <ul class="testimonials__list 1slider__testimonials-list">
             <li class="testimonials__item 1slider__testimonials-item">
               <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
-              <blockquote class="testimonials__content">
-                <cite class="testimonials__author-name">Ольга Михайлова</cite>
-                <p class="testimonials__programm">
-                  <span class="testimonials__programm-label">Программа:</span>
-                  Арт-Тель, февраль-сетнябрь 2017
-                </p>
-                <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
-                  месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
-                  Олега.</p>
 
-                <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
-                  практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание,
-                  жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
-                </p>
+              <div class="testimonials__content-wrapper">
 
-                <a href="#" class="testimonials__link-more">Читать подробнее</a>
-              </blockquote>
+                <div class="testimonials__controlls">
+                  <div class="slider__testimonials-pagination">3/6</div>
+                  <button type="button" class="slider__testimonials-btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="slider__testimonials-btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
             </li>
 
           </ul>
-
-          <div class="testimonials__controlls">
-            <!-- Add Pagination -->
-            <div class="slider__testimonials-pagination">3/6</div> <!-- Add Arrows -->
-            <button type="button" class="slider__testimonials-btn-prev">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button type="button" class="slider__testimonials-btn-next">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
-          </div>
-
-          <div class="socials socials--testimonials">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <span class="visually-hidden">Ссылка на Фейсбук</span>
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon socials__icon--facebook" width="24" height="24">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <span class="visually-hidden">Ссылка на Твиттер</span>
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon socials__icon--twitter" width="24" height="24">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <span class="visually-hidden">Ссылка на Инсташрам</span>
-                <a href="#" class="socials__link">
-                  <svg class="socials__icon socials__icon--instagram" width="24" height="24">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          
+        </blockquote></div>
+      
 
     </section>
     <!-- /.testimonials -->

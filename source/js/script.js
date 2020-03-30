@@ -150,36 +150,39 @@ setDataFromeStorage(ctaNameValue, 'ctaName');
 setDataFromeStorage(modalPhoneNumber, 'modalPhone');
 setDataFromeStorage(modalNameValue, 'modalName');
 
-function existVerticalScroll() {
-  return document.body.offsetHeight > window.innerHeight;
-}
 
-function getBodyScrollTop() {
-  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
-    document.body.scrollTop);
-}
+// ? IE
 
-function enableScroll() {
-  if (existVerticalScroll()) {
-    body.classList.remove('body-lock')
-    window.scrollTo(0, body.dataset.scrollY)
-  }
-}
+// function existVerticalScroll() {
+//   return document.body.offsetHeight > window.innerHeight;
+// }
+
+// function getBodyScrollTop() {
+//   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&
+//     document.body.scrollTop);
+// } 
+
+// function enableScroll() {
+//   if (existVerticalScroll()) {
+//     body.classList.remove('body-lock')
+//     window.scrollTo(0, body.dataset.scrollY)
+//   }
+// }
 
 function modalOpening(btn, modal, className) {
 
-  body.dataset.scrollY = getBodyScrollTop();
+  // body.dataset.scrollY = getBodyScrollTop();
 
   btn.addEventListener('click', function (evt) {
     evt.preventDefault();
     modal.classList.remove(className);
 
     inputName.focus();
-
-    if (existVerticalScroll()) {
-      body.classList.add('body-lock')
-      body.style.top = `-${body.dataset.scrollY}px`;
-    }
+    body.classList.add('body-lock');
+    // if (existVerticalScroll()) {
+    //   body.classList.add('body-lock');
+    //   body.style.top = `-${body.dataset.scrollY}px`;
+    // }
 
   });
 }
@@ -191,14 +194,16 @@ function modalClosing(btn, modal, className) {
     btn[i].addEventListener('click', function (evt) {
       evt.preventDefault();
       modal.classList.add(className);
-      enableScroll();
+      // enableScroll();
+      body.classList.remove('body-lock');
     });
   }
 
   window.addEventListener('click', function (evt) {
     if (evt.target == modal) {
       modal.classList.add(className);
-      enableScroll();
+      // enableScroll();
+      body.classList.remove('body-lock');
     }
   });
 
@@ -207,7 +212,8 @@ function modalClosing(btn, modal, className) {
       evt.preventDefault();
       if (!modal.classList.contains(className)) {
         modal.classList.add(className);
-        enableScroll();
+        // enableScroll();
+        body.classList.remove('body-lock');
       }
     }
   });
@@ -215,7 +221,7 @@ function modalClosing(btn, modal, className) {
 
 
 function displaySentSuccessfull(btn, modal, phoneElem, phoneKey, nameElem, nameKey) {
-  body.dataset.scrollY = getBodyScrollTop();
+  // body.dataset.scrollY = getBodyScrollTop();
 
   btn.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -240,10 +246,12 @@ function displaySentSuccessfull(btn, modal, phoneElem, phoneKey, nameElem, nameK
       modalCallback.classList.add(displayNoneClass);
     }
 
-    if (existVerticalScroll()) {
-      body.classList.add('body-lock')
-      body.style.top = -body.dataset.scrollY + 'px';
-    }
+    // if (existVerticalScroll()) {
+    //   body.classList.add('body-lock')
+    //   body.style.top = -body.dataset.scrollY + 'px';
+    // }
+
+    body.classList.add('body-lock');
   });
 }
 

@@ -64,9 +64,13 @@
   width: auto;
 }
 
-.to-go__input-phone {
+.to-go__form-item input {
   width: 322px;
   padding: 18px 80px 18px 39px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba($color: $black, $alpha: 0.87);
   border: 2px solid #e3e3e3;
   border-radius: 80px;
   box-sizing: border-box;
@@ -76,8 +80,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
-    color: $black;
-    opacity: 0.5;
+    color: rgba($color: $black, $alpha: 0.5);
   }
 }
 
