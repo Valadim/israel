@@ -94,21 +94,27 @@
   font-size: 17px;
   line-height: 150%;
   color: $blue;
+  transition: color ease 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $yellow;
+  }
 }
 
 .testimonials__controlls {
-  position: absolute;
-  bottom: 2px;
-  left: 424px;
+  // position: absolute;
+  // bottom: 2px;
+  // left: 424px;
   width: 100px;
   display: flex;
 }
 
 .testimonials__wrapper .socials--testimonials {
-  position: absolute;
+  // position: absolute;
   width: 100px;
-  right: 21px;
-  bottom: -4px;
+  // right: 21px;
+  // bottom: -4px;
 }
 
 @media (max-width: 1200px) {
