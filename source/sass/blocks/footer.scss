@@ -42,7 +42,7 @@
 
 @media (max-width: $mobile) {
   .footer {
-    margin-top: 29px;
+    margin-top: 64px;
     padding: 20px 0;
   }
 
@@ -51,19 +51,22 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 15px 15px;
+    padding: 13px 15px 4px;
   }
 
   .footer__logo {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-bottom: 13px;
+  }
+
+  .footer__logo-img {
     width: 99px;
     height: 31px;
-    margin-top: 0;
-    margin-bottom: 19px;
-    margin-left: 25px;
   }
 
   .footer__copyright {
-    margin-left: 1px;
-    margin-bottom: 27px;
+    margin-left: 0px;
+    margin-bottom: 28px;
   }
 }

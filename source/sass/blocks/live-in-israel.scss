@@ -192,6 +192,7 @@
   .live-in-israel__desc {
     max-width: 720px;
     margin: 0 auto 23px;
+    padding-right: 5px;
     font-size: 16px;
     line-height: 165%;
     color: rgba($color: $black, $alpha: 0.87);
@@ -212,6 +213,7 @@
     position: static;
     display: flex;
     height: auto;
+    margin: 42px 0 0;
   }
 
   .live-in-israel__programms-item {

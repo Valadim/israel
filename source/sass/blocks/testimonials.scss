@@ -85,14 +85,6 @@
   margin-left: 41px;
 }
 
-// .testimonials__wrapper .socials--testimonials {
-//   display: flex;
-//   order: 30;
-//   width: 100px;
-//   margin-right: 5px;
-//   margin-left: auto;
-// }
-
 .testimonials__content {
   order: 10;
   width: 680px;
@@ -205,10 +197,6 @@
     line-height: 29px;
   }
 
-  // .testimonials__item {
-  //   flex-direction: column;
-  // }
-
   .testimonials__content {
     margin: 0;
     padding: 0;
@@ -217,13 +205,13 @@
 
 @media (max-width: $mobile) {
   .testimonials {
-    margin-top: 74px;
+    margin-top: 31px;
   }
 
   .testimonials__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 15px 8px;
+    padding: 15px 6px;
   }
 
   .testimonials__list {
@@ -254,7 +242,7 @@
     position: relative;
     width: 240px;
     height: 320px;
-    margin: 7px 0 3px 24px;
+    margin: 22px 0 0 34px;
   }
 
   .testimonials__content-wrapper {
@@ -268,19 +256,18 @@
 
   .testimonials__controlls {
     order: 5;
-    flex-basis: 100%;
-    width: 100%;
-    margin-left: 5px;
+    flex-basis: fill;
+    width: 118px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .testimonials__wrapper .socials--testimonials {
     flex-basis: 40%;
     justify-content: flex-start;
     width: 100%;
-    // margin-top: 37px;
-    // margin-right: 46px;
-    // margin-left: auto;
-  }
+ }
 
   .testimonials__content {
     order: 10;
@@ -292,7 +279,7 @@
 
   .testimonials__author-name {
     display: block;
-    margin-top: 56px;
+    margin-top: 23px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -303,7 +290,7 @@
 
   .testimonials__programm {
     margin-top: 9px;
-    margin-bottom: 32px;
+    margin-bottom: 23px;
     font-size: 14px;
     line-height: 160%;
     color: $black;
@@ -317,14 +304,20 @@
   }
 
   .testimonials__text {
+    margin-bottom: 17px;
+    padding-right: 20px;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 26px;
   }
 
   .testimonials__link-more {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 10px;
     font-size: 16px;
     line-height: 150%;
+  }
+
+  .testimonials__wrapper .socials--testimonials {
+    margin: 21px 0 0 -6px;
   }
 }
