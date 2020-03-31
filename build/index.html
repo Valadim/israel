@@ -286,7 +286,7 @@
         <div class="faq__inner-wrapper">
           <h2 class="faq__title">частые вопросы</h2>
           <ul class="faq__list">
-            <li class="faq__item">
+            <li class="faq__item faq__item--1">
               <button type="button" class="faq__accordion-btn">Кто организатор? Какие сроки у программы?</button>
               <div class="faq__accordion-content">
                 <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
@@ -296,7 +296,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item faq__item--2">
               <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
               <div class="faq__accordion-content">
                 <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
@@ -306,7 +306,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item faq__item--3">
               <button type="button" class="faq__accordion-btn">Как определяется стоимость программы?</button>
               <div class="faq__accordion-content">
                 <p class="faq__accordion-desc">Полная стоимость определяется организаторами в зависимости от
@@ -315,7 +315,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item faq__item--4">
               <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
               <div class="faq__accordion-content">
                 <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
@@ -325,7 +325,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item faq__item--5">
               <button type="button" class="faq__accordion-btn">Признаётся ли учеба в рамках проекта для дальнейшего
                 обучения?</button>
               <div class="faq__accordion-content">
@@ -336,7 +336,7 @@
               </div>
             </li>
 
-            <li class="faq__item">
+            <li class="faq__item faq__item--6">
               <button type="button" class="faq__accordion-btn">Как выглдядит полный процесс регистрации на программу
                 «Маса»?</button>
               <div class="faq__accordion-content">
@@ -839,39 +839,41 @@
         <!-- /. Inner wrapper -->
       </div>
       <!-- /. Wrapper -->
+
+      <div class="call-to-action">
+        <div class="call-to-action__wrapper">
+          <div class="call-to-action__inner-wrapper">
+            <p class="call-to-action__title">
+              Оставьте ваши контакты, если у вас
+              остались вопросы — мы на них ответим!
+            </p>
+            <p class="call-to-action__desc">
+              Мы не передаём данные третьим лицам. Ваши данные
+              будут в безопасности и вам не придёт спам от нас!
+            </p>
+          </div>
+
+          <form action="https://echo.htmlacademy.ru" method="post" class="call-to-action__form">
+            <div class="call-to-action__fieldset">
+              <p class="call-to-action__form-item">
+                <label class="visually-hidden" for="call-to-action__name">Имя:</label>
+                <input class="call-to-action__input-name" id="call-to-action__name" type="text" name="Имя:" placeholder="Имя">
+              </p>
+              <p class="call-to-action__form-item">
+                <label class="visually-hidden" for="call-to-action__phone-number">Номер
+                  телефона:</label>
+                <input class="call-to-action__input-phone" id="call-to-action__phone-number" type="tel" name="Номер телефона:" placeholder="телефон" required="">
+              </p>
+              <button type="submit" class="call-to-action__btn-submit">перезвоните мне</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
     </section>
     <!-- /.contacts -->
 
-    <section class="call-to-action">
-      <h2 class="visually-hidden">Заказать консультацию</h2>
-      <div class="call-to-action__wrapper">
-        <div class="call-to-action__inner-wrapper">
-          <p class="call-to-action__title">
-            Оставьте ваши контакты, если у вас
-            остались вопросы — мы на них ответим!
-          </p>
-          <p class="call-to-action__desc">
-            Мы не передаём данные третьим лицам. Ваши данные
-            будут в безопасности и вам не придёт спам от нас!
-          </p>
-        </div>
 
-        <form action="https://echo.htmlacademy.ru" method="post" class="call-to-action__form">
-          <div class="call-to-action__fieldset">
-            <p class="call-to-action__form-item">
-              <label class="visually-hidden" for="call-to-action__name">Имя:</label>
-              <input class="call-to-action__input-name" id="call-to-action__name" type="text" name="Имя:" placeholder="Имя">
-            </p>
-            <p class="call-to-action__form-item">
-              <label class="visually-hidden" for="call-to-action__phone-number">Номер
-                телефона:</label>
-              <input class="call-to-action__input-phone" id="call-to-action__phone-number" type="tel" name="Номер телефона:" placeholder="телефон" required="">
-            </p>
-            <button type="submit" class="call-to-action__btn-submit">перезвоните мне</button>
-          </div>
-        </form>
-      </div>
-    </section>
 
   </main>
 

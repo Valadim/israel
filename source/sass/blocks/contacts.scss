@@ -17,6 +17,7 @@
 .contacts__title {
   @include title;
   text-align: left;
+  margin-top: 37px;
   margin-bottom: 50px;
 }
 
@@ -31,13 +32,13 @@
 
 .contacts__city {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .contacts__city-label {
   position: relative;
   margin: 0;
-  padding: 0 20px 0 20px;
+  padding: 0 17px 0 22px;
   font-weight: normal;
   font-size: 15px;
   line-height: 150%;
@@ -48,7 +49,7 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: 0;
+    left: 4px;
     width: 15px;
     height: 15px;
     background: url("../img/icon-marker.png") left center no-repeat;
@@ -69,8 +70,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 0;
+    top: 4px;
+    right: -7px;
     width: 15px;
     height: 15px;
     background: url("../img/icon-gps.png") right center no-repeat;
@@ -94,7 +95,8 @@
 }
 
 .contacts__curator-name {
-  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 12px;
   font-size: 15px;
   line-height: 150%;
   color: $black;
@@ -102,6 +104,7 @@
 }
 
 .contacts__curator-label {
+  padding-right: 5px;
   color: $blue;
 }
 
@@ -118,19 +121,19 @@
 
 .contacts__desc {
   max-width: 490px;
-  margin-top: 27px;
+  margin-top: 25px;
   font-size: 17px;
-  line-height: 170%;
+  line-height: 29px;
   color: $black;
   opacity: 0.87;
 }
 
 .contacts__map {
-  position: relative;
+  position: absolute;
   width: 702px;
   height: 448px;
-  top: -92px;
-  right: -75px;
+  top: 6px;
+  right: -95px;
   background: url("../img/map-bg.png") center no-repeat;
 }
 

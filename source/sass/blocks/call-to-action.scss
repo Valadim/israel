@@ -1,11 +1,11 @@
 .call-to-action {
-  padding: 15px 0;
+  margin-top: 93px;
   box-sizing: border-box;
 }
 
 .call-to-action__wrapper {
   display: flex;
-  width: 1170px;
+  width: 1176px;
   margin: 0 auto;
   padding: 0 15px;
   justify-content: space-between;
@@ -38,7 +38,7 @@
 .call-to-action__fieldset {
   display: flex;
   align-items: center;
-  margin: 15px 0 0 0;
+  margin: 15px 4px 0 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
@@ -54,10 +54,11 @@
 .call-to-action__form-item input {
   width: 250px;
   margin-right: 24px;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 38px 20px 38px;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
+  letter-spacing: 1px;
   color: rgba($color: $black, $alpha: 0.87);
   border: 2px solid #e3e3e3;
   border-radius: 80px;
@@ -94,6 +95,7 @@
 .call-to-action__btn-submit {
   @include btn;
 
+  padding: 20px 39px;
   outline: none;
 
   &:hover,

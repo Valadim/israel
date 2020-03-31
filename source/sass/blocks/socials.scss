@@ -32,7 +32,12 @@
 }
 
 .socials--testimonials {
-  margin-right: 115px;
+  display: flex;
+  order: 30;
+  width: 100px;
+  margin-top: 37px;
+  margin-right: 46px;
+  margin-left: auto;
 }
 
 .socials--contacts {
