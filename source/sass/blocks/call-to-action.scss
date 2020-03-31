@@ -54,7 +54,7 @@
 .call-to-action__form-item input {
   width: 250px;
   margin-right: 24px;
-  padding: 20px 80px 20px 40px;
+  padding: 20px 40px 20px 40px;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -73,10 +73,21 @@
   }
 }
 
-.call-to-action__input-name:hover,
-.call-to-action__input-name:focus,
-.call-to-action__input-phone:hover,
-.call-to-action__input-phone:focus {
+.call-to-action__form-item .visually-hidden:active {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.call-to-action__form-item input:hover,
+.call-to-action__form-item input:focus {
   border: 2px solid $yellow;
 }
 
@@ -112,8 +123,7 @@
     width: 100%;
   }
 
-  .call-to-action__input-name,
-  .call-to-action__input-phone {
+  .call-to-action__form-item input {
     width: 100%;
     padding-right: 20px;
   }
@@ -151,8 +161,7 @@
     width: 100%;
   }
 
-  .call-to-action__input-name,
-  .call-to-action__input-phone {
+  .call-to-action__form-item input {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;

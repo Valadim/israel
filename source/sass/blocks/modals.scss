@@ -60,6 +60,7 @@
 
   &--sent {
     text-align: center;
+    max-width: 356px;
   }
 }
 
@@ -81,9 +82,22 @@
   }
 }
 
+.modals__form-item .visually-hidden:active {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .modals__form-item input {
   width: 100%;
-  padding: 20px 80px 20px 40px;
+  padding: 20px 40px 20px 40px;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -102,20 +116,16 @@
   }
 }
 
-.modals__input-name:hover,
-.modals__input-name:focus,
-.modals__input-phone:hover,
-.modals__input-phone:focus {
+.modals__form-item input:hover,
+.modals__form-item input:focus {
   border: $form-focus;
 }
 
-.modals__input-name:valid,
-.modals__input-phone:valid {
+.modals__form-item input:valid {
   border: $form-valid;
 }
 
-.modals__input-name:invalid,
-.modals__input-phone:invalid {
+.modals__form-item input:invalid {
   border: $form-invalid;
 }
 
