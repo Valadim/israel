@@ -722,7 +722,7 @@ img {
 @media (max-width: 768px) {
   .promo {
     background-image: url("../img/promo-mobile-bg.jpg");
-    background-position: 0 2px; }
+    background-position: 0 0; }
   .promo__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -1961,7 +1961,7 @@ img {
   padding: 100px 0 200px;
   background: #b898ad url("../img/masaisrael-bg.jpg") center bottom no-repeat;
   background-size: cover;
-  background-position: 4px -7px;
+  background-position: 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
