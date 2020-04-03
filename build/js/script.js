@@ -1,6 +1,21 @@
 'use strict';
 
 /* Programms Tabs */
+
+var comonBtn = document.querySelector('.programs__tabs-btn--comon');
+var academBtn = document.querySelector('.programs__tabs-btn--academ');
+var practBtn = document.querySelector('.programs__tabs-btn--pract');
+var volunteerBtn = document.querySelector(
+  '.programs__tabs-btn--volunteer'
+);
+var religionBtn = document.querySelector('.programs__tabs-btn--religion');
+
+function openTabs(btn, programm) {
+  btn.addEventListener('click', function (event) {
+    openProgramm(event, programm);
+  });
+}
+
 function openProgramm(evt, progName) {
   var i;
   var tabcontent;
@@ -16,6 +31,12 @@ function openProgramm(evt, progName) {
   document.getElementById(progName).style.display = 'block';
   evt.currentTarget.className += ' programs__tabs-btn--active';
 }
+
+openTabs(comonBtn, 'common');
+openTabs(academBtn, 'academ');
+openTabs(practBtn, 'pract');
+openTabs(volunteerBtn, 'volunteer');
+openTabs(religionBtn, 'religion');
 
 document.getElementById('defaultOpen').click();
 /* Programms Tabs END*/
