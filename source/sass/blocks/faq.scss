@@ -77,7 +77,7 @@
   }
 
   &--5 {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     & .faq__accordion-btn {
       padding: 17px 60px 22px 29px;
@@ -185,8 +185,6 @@
     &::before {
       left: 1px;
     }
-
-    &--1 {}
 
     &--2 {
       & .faq__accordion-btn {

@@ -267,6 +267,7 @@
     flex-basis: 40%;
     justify-content: flex-start;
     width: 100%;
+    margin: 21px 0 0 -6px;
   }
 
   .testimonials__content {
@@ -315,9 +316,5 @@
     margin-top: 10px;
     font-size: 16px;
     line-height: 150%;
-  }
-
-  .testimonials__wrapper .socials--testimonials {
-    margin: 21px 0 0 -6px;
   }
 }
