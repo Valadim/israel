@@ -149,7 +149,8 @@
 
 @media (max-width: 1200px) {
   .faq {
-    margin-top: 90px;
+    margin: 0;
+    padding-bottom: 0;
     background: none;
   }
 
@@ -175,6 +176,11 @@
     &::before {
       display: none;
     }
+  }
+
+  .faq__title {
+    font-size: 32px;
+    line-height: 39px;
   }
 
   .faq__item {
@@ -280,7 +286,7 @@
   .faq__title {
     @include title-mobile;
     text-align: center;
-    margin-top: 0;
+    margin-top: 91px;
     margin-bottom: 10px;
   }
 }

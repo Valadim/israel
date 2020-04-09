@@ -41,7 +41,21 @@
   background: none;
   border: 1px solid $white;
   border-radius: 70px;
+  outline: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $blue;
+
+    &::before {
+      border: 1px dashed $blue;
+    }
+
+    &::after {
+      background-color: $blue;
+    }
+  }
 
   &::before {
     content: "";

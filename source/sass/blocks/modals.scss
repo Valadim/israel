@@ -114,6 +114,14 @@
     line-height: 20px;
     color: rgba($color: $black, $alpha: 0.5);
   }
+
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
 }
 
 .modals__form-item input:hover,
@@ -152,8 +160,12 @@
   padding-left: 30px;
   font-size: 13px;
   line-height: 150%;
-  color: $black;
-  opacity: 0.74;
+  color: rgba($color: $black, $alpha: 0.74);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 
   &::before {
     content: "";
@@ -165,10 +177,11 @@
     border: 2px solid $yellow;
     border-radius: 2px;
     cursor: pointer;
+    transition: border-color ease 0.3s;
   }
 
   &:hover::before {
-    outline: auto;
+    border-color: $blue;
   }
 }
 
@@ -185,7 +198,7 @@
 }
 
 .modals__input-checkbox:focus + .modals__input-checkbox-label::before {
-  outline: auto;
+  border-color: $blue;
 }
 
 .modals__img {

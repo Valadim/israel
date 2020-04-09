@@ -88,12 +88,34 @@
   border-radius: 80px;
   box-sizing: border-box;
   outline: none;
+  transition: border-color ease 0.3s;
 
   &::placeholder {
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
     color: rgba($color: $black, $alpha: 0.5);
+  }
+
+  &:valid {
+    border: $form-valid;
+  }
+
+  &:invalid {
+    border: $form-invalid;
+  }
+
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus {
+    border: $form-focus;
   }
 }
 
@@ -119,6 +141,10 @@
 }
 
 @media (max-width: 1200px) {
+  .to-go {
+    padding: 0;
+  }
+
   .to-go__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -126,11 +152,10 @@
   }
 
   .to-go__title {
-    max-width: 345px;
-    margin-top: 358px;
+    margin-top: 180px;
     margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 32px;
+    line-height: 39px;
   }
 }
 
@@ -185,8 +210,7 @@
 
   .to-go__desc {
     max-width: 400px;
-    margin-bottom: 22px;
-    padding-left: 2px;
+    margin: 0 auto 22px;
     font-size: 16px;
     line-height: 26px;
   }

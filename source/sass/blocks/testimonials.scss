@@ -190,16 +190,22 @@
   }
 
   .testimonials__title {
-    max-width: 345px;
-    margin-top: 358px;
+    margin-top: 50px;
     margin-bottom: 32px;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .testimonials__content-wrapper {
+    max-width: none;
+    width: 100%;
   }
 
   .testimonials__content {
-    margin: 0;
+    margin: 0 0 0 30px;
     padding: 0;
+    width: 100%;
   }
 }
 
@@ -273,6 +279,7 @@
   .testimonials__content {
     order: 10;
     width: 680px;
+    margin: 0;
     font-size: 16px;
     line-height: 160%;
     box-sizing: border-box;

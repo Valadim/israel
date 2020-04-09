@@ -55,6 +55,7 @@
   background: none;
   border: none;
   box-sizing: border-box;
+  outline: none;
   cursor: pointer;
 
   &:hover .circle2 {
@@ -81,8 +82,13 @@
     padding: 0 15px;
   }
 
+  .about__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
   .about__video-wrapper {
-    width: 1170px;
+    width: 100%;
     padding: 0 15px;
     height: 460px;
     background-image: url("../img/about-photo.png");
