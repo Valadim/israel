@@ -592,11 +592,14 @@ img {
   color: #484848;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 1px dashed #484848;
-  -webkit-transition: color ease 0.3s, border-bottom ease 0.3s;
-  transition: color ease 0.3s, border-bottom ease 0.3s; }
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s; }
   .header__callback:hover, .header__callback:focus {
-    color: #ffc341;
+    color: #ffc341; }
+
+.header__callback-label {
+  border-bottom: 1px dashed #484848; }
+  .header__callback-label:hover, .header__callback-label:focus {
     border-bottom: 1px dashed #ffc341; }
 
 .header__logo-img {
@@ -3735,7 +3738,6 @@ img {
     margin-right: auto;
     padding: 20px 63px 19px; }
   .modals__form-item--checkbox {
-    margin-left: 11px;
     margin-left: auto;
     margin-right: auto; }
   .modals__img {

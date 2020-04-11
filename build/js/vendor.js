@@ -4846,7 +4846,7 @@ window.swiper = Swiper;
   window.imaskJS = IMask;
 })();
 
-
+// polyfill the remove() method in Internet Explorer 9 and higher
 (function (arr) {
   arr.forEach(function (item) {
     if (item.hasOwnProperty('remove')) {
