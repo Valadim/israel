@@ -59,6 +59,7 @@
 }
 
 .to-go__form-item {
+  position: relative;
   margin: 0;
   padding: 0;
   width: auto;
@@ -97,12 +98,8 @@
     color: rgba($color: $black, $alpha: 0.5);
   }
 
-  &:valid {
+  &:required:valid {
     border: $form-valid;
-  }
-
-  &:invalid {
-    border: $form-invalid;
   }
 
   &:-moz-submit-invalid {

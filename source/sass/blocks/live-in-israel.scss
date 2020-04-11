@@ -22,6 +22,20 @@
     background-position: center top;
     background-size: auto;
     background-repeat: no-repeat;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 613px;
+    right: -123px;
+    width: 124px;
+    height: 148px;
+    background-image: url("../img/compas.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
     z-index: -1;
   }
 }
@@ -252,7 +266,8 @@
     margin: 0 auto;
     padding: 0 15px;
 
-    &::before {
+    &::before,
+    &::after {
       display: none;
     }
   }

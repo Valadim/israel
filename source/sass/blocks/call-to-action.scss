@@ -73,6 +73,15 @@
     color: rgba($color: $black, $alpha: 0.5);
   }
 
+  &:required:valid {
+    border: $form-valid;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $yellow;
+  }
+
   &:-moz-submit-invalid {
     box-shadow: none;
   }
@@ -93,11 +102,6 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.call-to-action__form-item input:hover,
-.call-to-action__form-item input:focus {
-  border: 2px solid $yellow;
 }
 
 .call-to-action__btn-submit {
