@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
+  на русском) и возможность стажировки в Израиле.">
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/FiraSans-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/ralewayextrabold.woff2" as="font">
+</head>
+
+<body>
+
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="paint0_linear" x1="4.737" y1=".486" x2="14.67" y2="3.988" gradientUnits="userSpaceOnUse"><stop stop-color="#FFC341"></stop><stop offset=".964" stop-color="#FFD701"></stop></linearGradient><linearGradient id="paint0_linear" x1="16.842" y1="1.829" x2="52.588" y2="13.732" gradientUnits="userSpaceOnUse"><stop stop-color="#FFC341"></stop><stop offset=".964" stop-color="#FFD701"></stop></linearGradient><linearGradient id="paint1_linear" x1="30.632" y1="8.029" x2="55.51" y2="19.074" gradientUnits="userSpaceOnUse"><stop stop-color="#FFC341"></stop><stop offset=".964" stop-color="#FFD701"></stop></linearGradient></defs><symbol id="icon-arrow-left"><path d="M10 1.5L2 9l8 7.5" stroke="#484848" stroke-width="2"></path></symbol><symbol id="icon-arrow-right"><path d="M1 16.5L9 9 1 1.5" stroke="#484848" stroke-width="2"></path></symbol><symbol id="icon-chevron"><path d="M1 1l7.5 8L16 1" stroke="#1FC0FC" stroke-width="2"></path></symbol><symbol id="icon-cross"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.485 8.5L0 1.507 1.418 0 9 7.084 16.582 0 18 1.507 10.515 8.5 18 15.493 16.582 17 9 9.916 1.418 17 0 15.493 7.485 8.5z" fill="url(#paint0_linear)"></path></symbol><symbol id="icon-facebook"><path d="M15.538 5.187H17.4V1.943c-.321-.044-1.426-.143-2.713-.143-2.685 0-4.524 1.689-4.524 4.793V9.45H7.2v3.626h2.963V22.2h3.633v-9.123h2.843l.45-3.626h-3.294V6.953c0-1.049.283-1.766 1.743-1.766z"></path></symbol><symbol id="icon-instagram-white"><path d="M12 8.4A3.604 3.604 0 008.4 12c0 1.985 1.615 3.6 3.6 3.6s3.6-1.615 3.6-3.6-1.615-3.6-3.6-3.6z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2.4 17.61V6.39A3.99 3.99 0 016.39 2.4h11.22a3.99 3.99 0 013.99 3.99v11.22a3.99 3.99 0 01-3.99 3.99H6.39a3.99 3.99 0 01-3.99-3.99zm4.16-7.644a5.823 5.823 0 007.474 7.474 5.508 5.508 0 003.406-3.406A5.823 5.823 0 009.966 6.56 5.508 5.508 0 006.56 9.966zM18 6.6a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" fill="#fff"></path></symbol><symbol id="icon-instagram"><path d="M12 8.4A3.604 3.604 0 008.4 12c0 1.985 1.615 3.6 3.6 3.6s3.6-1.615 3.6-3.6-1.615-3.6-3.6-3.6z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2.4 17.61V6.39A3.99 3.99 0 016.39 2.4h11.22a3.99 3.99 0 013.99 3.99v11.22a3.99 3.99 0 01-3.99 3.99H6.39a3.99 3.99 0 01-3.99-3.99zm4.16-7.644a5.823 5.823 0 007.474 7.474 5.508 5.508 0 003.406-3.406A5.823 5.823 0 009.966 6.56 5.508 5.508 0 006.56 9.966zM18 6.6a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z"></path></symbol><symbol id="icon-ok"><rect x="3" y="3" width="58" height="58" rx="29" stroke="url(#paint0_linear)" stroke-width="6"></rect><path d="M18 27.88L32.197 43 66 7" stroke="url(#paint1_linear)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path></symbol><symbol id="icon-telegram"><path d="M9.633 14.863l-.364 5.026c.52 0 .746-.22 1.016-.483l2.441-2.291 5.059 3.637c.927.508 1.581.24 1.831-.838l3.32-15.275h.001c.295-1.347-.495-1.874-1.4-1.543L2.022 10.432c-1.332.507-1.311 1.236-.226 1.566l4.99 1.524 11.59-7.12c.545-.354 1.04-.158.633.197l-9.375 8.264z"></path></symbol><symbol id="icon-twitter"><path d="M23.077 5.13a9.47 9.47 0 01-2.617.718 4.516 4.516 0 001.998-2.51 9.076 9.076 0 01-2.88 1.1 4.54 4.54 0 00-7.856 3.106c0 .359.03.705.105 1.035C8.05 8.394 4.71 6.585 2.466 3.828a4.573 4.573 0 00-.622 2.296c0 1.573.81 2.967 2.017 3.774a4.485 4.485 0 01-2.052-.56v.05a4.563 4.563 0 003.639 4.463c-.37.101-.773.15-1.19.15-.291 0-.585-.017-.86-.078.588 1.799 2.258 3.121 4.243 3.164a9.125 9.125 0 01-5.63 1.937c-.373 0-.73-.017-1.088-.062A12.787 12.787 0 007.89 21c8.358 0 12.927-6.923 12.927-12.924 0-.2-.007-.395-.017-.587a9.061 9.061 0 002.277-2.358z"></path></symbol><symbol id="icon-whatsapp"><path d="M12.002 2h-.005C6.485 2 2 6.485 2 12c0 2.188.705 4.215 1.904 5.861l-1.246 3.715L6.5 20.347A9.913 9.913 0 0012.002 22C17.517 22 22 17.514 22 12S17.516 2 12.002 2zm5.82 14.121c-.242.681-1.2 1.247-1.963 1.412-.523.11-1.205.2-3.503-.753-2.938-1.218-4.831-4.204-4.978-4.398-.142-.193-1.188-1.58-1.188-3.016 0-1.435.729-2.133 1.022-2.433.242-.247.64-.36 1.023-.36.124 0 .235.007.335.012.294.013.441.03.635.494.241.581.829 2.016.899 2.163.071.148.142.348.042.542-.094.2-.176.288-.324.458-.147.17-.287.3-.434.483-.136.159-.288.329-.118.623.17.287.758 1.246 1.623 2.016 1.116.993 2.02 1.311 2.345 1.446.24.1.528.076.705-.111.223-.242.5-.642.78-1.035.2-.283.453-.318.718-.218.27.094 1.699.8 1.993.947.293.147.487.217.558.34.07.124.07.706-.17 1.388z"></path></symbol></svg>
+  </div>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="tel:+97226216581" class="header__phone">+ (972) 2 – 621 – 6581</a>
+
+      <a class="header__logo">
+        <img src="img/logo.png" srcset="img/logo2x.png 2x" alt="Логотип Маса" class="header__logo-img" width="137" height="48">
+      </a>
+
+      <a href="#" class="header__callback">
+        <span class="header__callback-label">заказать звонок</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="promo__title">Учёба, путешествие и карьера
+          для еврейской молодёжи</h1>
+        <button type="button" class="promo__btn">
+          <span class="visually-hidden">Узнать о программе</span>
+          <img src="img/mouse.png" srcset="img/mouse2x.png 2x" alt="листать вниз" class="promo__btn-icon" width="17" height="26">
+        </button>
+      </div>
+    </section>
+
+
+    <section class="about">
+      <div class="about__wrapper">
+        <h2 class="about__title">О программе</h2>
+        <p class="about__desc">
+          «Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250 учебных программ (60
+          на русском) и возможность стажировки в Израиле. В течение освоения программ
+          предусмотрен грант от 4200 до
+          8400$.
+        </p>
+      </div>
+      <div class="about__video-wrapper">
+        <button type="button" class="about__video-play-btn">
+
+          <svg class="about__video-btn-icon" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle1" opacity="0.32" cx="48" cy="48" r="48" fill="white"></circle>
+            <circle class="circle2" cx="48" cy="48" r="32" fill="white"></circle>
+            <path class="triangle" d="M58 47.5L43 57V38L58 47.5Z" fill="#1FC0FC"></path>
+          </svg>
+          <span class="visually-hidden">Включить презентацию о программе</span>
+        </button>
+      </div>
+
+    </section>
+    <!-- /.about -->
+
+    <section class="programs">
+      <div class="programs__wrapper">
+        <h2 class="programs__title">программы</h2>
+
+        <div class="programs__tabs">
+          <div class="programs__tabs-btn-wrapper">
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--comon" id="defaultOpen"><span>Общие</span></button>
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--academ">Академические</button>
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--pract">Стажировки</button>
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--volunteer">Волонтёрство</button>
+            <button type="button" class="programs__tabs-btn programs__tabs-btn--religion">Религиозные</button>
+          </div>
+          <div id="common" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Общие</h3>
+            <p class="programs__tabs-desc">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем
+              жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также
+              академический центр, живая лаборатория идей и творческого исследования. </p>
+            <p class="programs__tabs-desc">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
+              биологии, сравнительной
+              религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+          <div id="academ" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Академические</h3>
+            <p class="programs__tabs-desc">Провести семестр или год за рубежом, знакомясь с различными культурами и
+              идеями, традициями и стилем
+              жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира, это также
+              академический центр, живая лаборатория идей и творческого исследования. </p>
+            <p class="programs__tabs-desc">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции,
+              биологии, сравнительной
+              религии, законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете
+              изучить все это в удивительной университетской среде.</p>
+          </div>
+
+          <div id="pract" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Стажировки</h3>
+            <p class="programs__tabs-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+              temporibus animi maxime alias enim
+              eveniet at qui illum soluta deleniti ducimus, quaerat doloremque, possimus, distinctio iusto quis veniam
+              nam aperiam.</p>
+          </div>
+          <div id="volunteer" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Волонтёрство</h3>
+            <p class="programs__tabs-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут
+              рыбные тексты. Текста свой на
+              берегу ipsum от всех оксмокс великий рот, большой снова, буквенных, заглавных пояс приставка ее
+              маленькая.
+              Грустный ручеек lorem послушавшись?</p>
+          </div>
+          <div id="religion" class="programs__tabs-content">
+            <h3 class="programs__tabs-title">Религиозные</h3>
+            <p class="programs__tabs-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis
+              eum
+              eaque tempore, porro quos iste
+              saepe odit? Nihil quo quos recusandae similique dolore soluta eius doloribus fugit voluptatibus
+              officiis.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /.programms -->
+
+    <section class="to-go">
+
+      <div class="to-go__wrapper">
+        <h2 class="to-go__title">Хочу поехать!</h2>
+        <p class="to-go__desc">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+        </p>
+
+        <form action="https://echo.htmlacademy.ru" method="post" class="to-go__form">
+          <div class="to-go__fieldset">
+            <p class="to-go__form-item">
+              <label class="visually-hidden" for="to-go__phone-number">Номер
+                телефона:</label>
+              <input class="to-go__input-phone" id="to-go__phone-number" type="tel" name="Номер телефона" placeholder="телефон" required="">
+            </p>
+            <button type="submit" class="to-go__btn-submit">перезвоните мне</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    <!-- /.to-go -->
+
+    <section class="how-to-go">
+      <div class="how-to-go__wrapper">
+        <div class="how-to-go__inner-wrapper">
+          <h2 class="how-to-go__title">Как поехать</h2>
+          <p class="how-to-go__desc">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
+            получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+          <p class="how-to-go__desc how-to-go__desc--bold">Чтобы иметь возможность получить грант на обучение от 4200
+            до 8400$, вы
+            должны:</p>
+          <ul class="how-to-go__steps-list">
+            <li class="how-to-go__step how-to-go__step--1">Быть в возрасте от 16 до 30 лет</li>
+            <li class="how-to-go__step how-to-go__step--2">Иметь оконченное среднее образование</li>
+            <li class="how-to-go__step how-to-go__step--3">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
+            </li>
+            <li class="how-to-go__step how-to-go__step--4">За последние 2 года быть не больше 3х месяцев
+              подряд непрерывно в Израиле.</li>
+          </ul>
+          <p class="how-to-go__notice">Если вы не подходите по этим правилам, вы всё равно можете принять участие в
+            программе «Маса», оплатив её полную стоимость.</p>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.how-to-go -->
+
+    <section class="live-in-israel">
+      <div class="live-in-israel__wrapper">
+        <h2 class="live-in-israel__title">Жизнь в израиле</h2>
+        <p class="live-in-israel__desc">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
+          стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
+
+        <div class="slider slider--live-list">
+          <ul class="live-in-israel__programms-list slider__list">
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--excursions slider__item">
+              <p class="live-in-israel__programms-title">Экскурсии по Израилю и знакомство с его историей</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--learning slider__item">
+              <p class="live-in-israel__programms-title">Изучение иврита</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--profession slider__item">
+              <p class="live-in-israel__programms-title">Обучение современным навыкам и профессиям</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--collaboration slider__item">
+              <p class="live-in-israel__programms-title">Совместные творческие проекты с израильской молодёжью</p>
+            </li>
+
+            <li class="live-in-israel__programms-item live-in-israel__programms-item--lider slider__item">
+              <p class="live-in-israel__programms-title">Развитие лидерства</p>
+            </li>
+          </ul>
+
+          <div class="slider__bullets"></div>
+        </div>
+      </div>
+
+      <div class="masaisraerl">
+        <div class="masaisraerl__wrapper">
+          <div class="masaisraerl__inner-wrapper">
+            <p class="masaisraerl__title">#masaisrael</p>
+            <p class="masaisraerl__desc">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и
+              фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
+            <button type="button" class="masaisraerl__btn">смотреть фото</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.live-in-israel -->
+
+    <section class="faq">
+
+      <div class="faq__wrapper">
+        <div class="faq__inner-wrapper">
+          <h2 class="faq__title">частые вопросы</h2>
+          <ul class="faq__list">
+            <li class="faq__item faq__item--1">
+              <button type="button" class="faq__accordion-btn">Кто организатор? Какие сроки у программы?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. До ручеек вдали
+                  рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
+                  правилами грамматики? Использовало, однажды строчка.</p>
+              </div>
+            </li>
+
+            <li class="faq__item faq__item--2">
+              <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. До ручеек вдали
+                  рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
+                  правилами грамматики? Использовало, однажды строчка.</p>
+              </div>
+            </li>
+
+            <li class="faq__item faq__item--3">
+              <button type="button" class="faq__accordion-btn">Как определяется стоимость программы?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Полная стоимость определяется организаторами в зависимости от
+                  направления. В большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому
+                  предусматривается определённая доля личного участия.</p>
+              </div>
+            </li>
+
+            <li class="faq__item faq__item--4">
+              <button type="button" class="faq__accordion-btn">Что такое грант на обучение?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. До ручеек вдали
+                  рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
+                  правилами грамматики? Использовало, однажды строчка.</p>
+              </div>
+            </li>
+
+            <li class="faq__item faq__item--5">
+              <button type="button" class="faq__accordion-btn">Признаётся ли учеба в рамках проекта для дальнейшего
+                обучения?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. До ручеек вдали
+                  рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
+                  правилами грамматики? Использовало, однажды строчка.</p>
+              </div>
+            </li>
+
+            <li class="faq__item faq__item--6">
+              <button type="button" class="faq__accordion-btn">Как выглдядит полный процесс регистрации на программу
+                «Маса»?</button>
+              <div class="faq__accordion-content">
+                <p class="faq__accordion-desc">Далеко-далеко за словесными горами в стране гласных и согласных живут,
+                  рыбные тексты. До ручеек вдали
+                  рукописи журчит точках ты оксмокс по всей, снова семь пояс, семантика послушавшись повстречался
+                  правилами грамматики? Использовало, однажды строчка.</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- /.faq -->
+
+    <section class="testimonials">
+
+      <div class="testimonials__wrapper">
+        <h2 class="testimonials__title">Отзывы</h2>
+
+        <div class="testimonials__slider-container">
+          <ul class="testimonials__list">
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials__item">
+              <img src="img/testimonials-img.png" alt="Ольга Михайлова" class="testimonials__author-photo" width="364" height="480">
+
+              <div class="testimonials__content-wrapper">
+
+                <div class="testimonials__controlls">
+                  <div class="testimonials__pagination"></div>
+                  <button type="button" class="testimonials__btn-prev">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                  </button>
+                  <button type="button" class="testimonials__btn-next">
+                    <span class="visually-hidden">Следующий слайд</span>
+                  </button>
+                </div>
+
+                <blockquote class="testimonials__content">
+                  <cite class="testimonials__author-name">Ольга Михайлова</cite>
+                  <p class="testimonials__programm">
+                    <span class="testimonials__programm-label">Программа:</span>
+                    Арт-Тель, февраль-сетнябрь 2017
+                  </p>
+                  <p class="testimonials__text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
+                    месяцев «иврит как культура». Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и
+                    Олега.</p>
+
+                  <p class="testimonials__text">С первой же встречи тебе дают понять - что ты не один, у тебя есть
+                    практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное
+                    расписание,
+                    жилье, приятные встречи, языковой курс а еще и поездки всей программой в разные уголки страны.
+                  </p>
+
+                  <a href="#" class="testimonials__link-more">Читать подробнее</a>
+                </blockquote>
+
+                <div class="socials socials--testimonials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Фейсбук</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Твиттер</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                          <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <span class="visually-hidden">Ссылка на Инсташрам</span>
+                      <a href="#" class="socials__link">
+                        <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.testimonials -->
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+
+      <div class="contacts__wrapper">
+        <p class="contacts__title">Узнать подробности</p>
+        <div class="contacts__inner-wrapper">
+          <div class="contacts__data">
+            <div class="contacts__city">
+              <p class="contacts__city-label">Ваш город:</p>
+              <p class="contacts__selected-city">новосибирск</p>
+            </div>
+
+            <div class="contacts__curator">
+              <div class="contacts__curator-wrapper">
+
+                <img src="img/curator-img.png" alt="Анна Горелик" width="112" height="112" class="contacts__curator-img">
+                <div class="contacts__curator-info">
+                  <p class="contacts__curator-name">
+                    <span class="contacts__curator-label">Ваш куратор:</span>
+                    Анна Горелик
+                  </p>
+                  <address class="contacts__address">
+                    Новосибирск, ул. Щетинкина 68,
+                    культурный центр «Бейт Менахем»
+                  </address>
+
+                  <div class="socials socials--contacts">
+                    <ul class="socials__list">
+                      <li class="socials__item">
+                        <span class="visually-hidden">Мы в Фейсбук</span>
+                        <a href="#" class="socials__link">
+                          <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                            <use xlink:href="#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <span class="visually-hidden">Написать в WhatsApp</span>
+                        <a href="#" class="socials__link">
+                          <svg class="socials__icon socials__icon--whatsapp" width="24" height="24">
+                            <use xlink:href="#icon-whatsapp"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <span class="visually-hidden">Написать в Telegram</span>
+                        <a href="#" class="socials__link">
+                          <svg class="socials__icon socials__icon--telegram" width="24" height="24">
+                            <use xlink:href="#icon-telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /. Socials -->
+                </div>
+                <!-- /. Contacts__curator-wrapper -->
+
+              </div>
+              <!--  /. Curator-info -->
+              <p class="contacts__desc">
+                Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё! Свяжитесь с
+                куратором, узнайте подробнее о программах и выберите свою!
+              </p>
+            </div>
+            <!-- /. Contact data -->
+
+          </div>
+
+          <div class="contacts__map"></div>
+        </div>
+        <!-- /. Inner wrapper -->
+      </div>
+      <!-- /. Wrapper -->
+
+      <div class="call-to-action">
+        <div class="call-to-action__wrapper">
+          <div class="call-to-action__inner-wrapper">
+            <p class="call-to-action__title">
+              Оставьте ваши контакты, если у вас
+              остались вопросы — мы на них ответим!
+            </p>
+            <p class="call-to-action__desc">
+              Мы не передаём данные третьим лицам. Ваши данные
+              будут в безопасности и вам не придёт спам от нас!
+            </p>
+          </div>
+
+          <form action="https://echo.htmlacademy.ru" method="post" class="call-to-action__form">
+            <div class="call-to-action__fieldset">
+              <p class="call-to-action__form-item call-to-action__form-item--name">
+                <label class="visually-hidden" for="call-to-action__name">Имя:</label>
+                <input class="call-to-action__input-name" id="call-to-action__name" type="text" name="Имя:" placeholder="Имя" required="">
+              </p>
+              <p class="call-to-action__form-item call-to-action__form-item--phone">
+                <label class="visually-hidden" for="call-to-action__phone-number">Номер
+                  телефона:</label>
+                <input class="call-to-action__input-phone" id="call-to-action__phone-number" type="tel" name="Номер телефона:" placeholder="телефон" required="">
+              </p>
+              <button type="submit" class="call-to-action__btn-submit">перезвоните мне</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.contacts -->
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <img src="img/logo-footer.png" srcset="img/logo-footer2x.png 2x" alt="Логотип Маса" class="footer__logo-img" width="85" height="27">
+      </a>
+
+      <p class="footer__copyright">Copyright someDesignCompany ©2019</p>
+
+      <div class="socials socials--footer">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Фейсбук</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--facebook" width="24" height="24">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Твиттер</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--twitter" width="24" height="24">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Инсташрам</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--instagram" width="24" height="24">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modals modals--callback modals--hide">
+    <div class="modals__wrapper">
+
+      <button type="button" class="modals__close-btn">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <p class="modals__title">Заказать звонок</p>
+      <p class="modals__desc">
+        Оставьте ваши контактные данные, мы свяжемся
+        с вами в течение рабочего дня и обязательно
+        поможем найти ответ на ваш вопрос!
+      </p>
+
+      <form action="https://echo.htmlacademy.ru" method="post" class="modals__form">
+        <div class="modals__fieldset">
+          <p class="modals__form-item modals__form-item--name">
+            <input class="modals__input-name" id="modals__name" type="text" name="Имя:" placeholder="Имя" required="">
+            <label class="visually-hidden" for="modals__name">Имя:</label>
+          </p>
+          <p class="modals__form-item modals__form-item--phone">
+            <input class="modals__input-phone" id="modals__phone-number" type="tel" name="Номер телефона:" placeholder="Телефон" required="">
+            <label class="visually-hidden" for="modals__phone-number">Номер
+              телефона:</label>
+          </p>
+          <button type="submit" class="modals__btn-submit">перезвоните мне</button>
+          <p class="modals__form-item modals__form-item--checkbox">
+            <input class="modals__input-checkbox visually-hidden" type="checkbox" name="С условиями согласен" id="input-checkbox">
+            <label class="modals__input-checkbox-label" for="input-checkbox">
+              Нажимая на кнопку, вы даёте согласие
+              на обработку персональных данных</label>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modals modals--sent modals--hide">
+    <div class="modals__wrapper modals__wrapper--sent">
+
+      <button type="button" class="modals__close-btn">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+
+      <img src="img/icon-ok.svg" alt="Сообщение успешно отправленно" class="modals__img" width="66" height="64">
+      <p class="modals__title">Заявка принята</p>
+      <p class="modals__desc modals__desc--sent">
+        Мы приняли ваши данные и вскоре мы
+        перезвоним вам для уточнения деталей!
+      </p>
+      <button type="button" class="modals__btn-submit modals__done-btn">Понятно</button>
+    </div>
+  </div>
+
+
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
