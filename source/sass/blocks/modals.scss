@@ -264,20 +264,31 @@
   }
 
   .modals__desc {
+    max-width: 280px;
     margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.5px;
   }
 
+  .modals__form-item {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .modals__btn-submit {
     margin-top: 15px;
-    margin-left: 11px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 63px 19px;
   }
 
   .modals__form-item--checkbox {
-    margin-left: 11px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .modals__img {
@@ -290,7 +301,8 @@
   }
 
   .modals--sent .modals__btn-submit {
-    margin-left: 18px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 97px 19px 98px;
   }
 }

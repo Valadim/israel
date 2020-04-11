@@ -72,3 +72,11 @@ img {
 .modals__fieldset .form-error {
   position: static;
 }
+
+@media (max-width: $mobile) {
+  .form-error {
+    position: static;
+    margin-top: 0;
+    text-align: center;
+  }
+}
